@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <title>House Map</title>
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -8,52 +11,81 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
         <link rel="stylesheet" href="main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 <body>
 
+<span>
+    <div class="title" style="text-align: center;">
+        <h1>SCU House Map</h1>
 
+    </div>
+</span>
 
-<h1>Santa Clara University House Map</h1>
+<br/>
 
-<div class="row">
+<!--
 <div class="col-lg-4"></div>
   <div class="col-lg-4">
     <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button class="btn btn-default" type="button" id="searchBttn">Go!</button>
       </span>
-      <input type="text" class="form-control" placeholder="Find a house...">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <div class="col-lg-4"></div>
-</div>
-    <h1></h1>
-
-    <div class="mapWrapper col-sm-12">
-        <div id="map" style="width:100%;height:1000px">
+      <input type="text" class="form-control" placeholder="Find a house..." id="houseSearch">
     </div>
+  </div>  <div class="col-lg-4"></div>
+</div>
+-->
 
-    <script>
-        function myMap() {
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {
-            center: new google.maps.LatLng(37.3477714, -121.9416224),
-            zoom: 15
-        };
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-    }
-    </script>
 
+<br/>
+<br/>
+<br/>
+
+<div class="houseInterface">
+    <div class="mapWrapper col-sm-8 col-xs-6">
+        <div id="map" style="width:100%;height:800px"></div>
+    </div>
+    <div class="houseList col-sm-4 col-xs-6">  
+
+    </div>
+</div>
+<div class="bottomText">
+
+<br/>
+    <ul>
+        <li>How to submit a house:</li>
+        <li>Email placeholder@gmail.com with your house name, address, and a short description (optional)</li>
+
+        <li>Created and Maintained by Collin Seaman and Pedro Sanchez</li>
+    </ul>
+    <br/>
+    <small>We are not affiliated, endorsed by, or in any way officially connected with Santa Clara University or its affiliates.</small>
+</div>
 
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf2SGo8b3FYZAJfKHc4E6k2R_tzXAUj2c&callback=myMap"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw6csekQDGjLcjkgFI9mpDbz0YG0aCFA&callback=initMap">
+    </script>
+
+    <script type="text/javascript" src="houses.js"></script>
+
+    <script type="text/javascript" src="mapAPI.js"></script>
+
+    <script type="text/javascript" src="events.js"></script>
+
+
+
 </body>
 <html>

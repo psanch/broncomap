@@ -3,14 +3,42 @@ body {
 }
 
 .row .input-group {
-	font-family: 
+	font-family: Helvetica Neue;
+}
+span {
 }
 
 h1 {
 	font-family: trajan;
-	text-align: center;
 	color: #ebebeb;
 	border-radius: 10px;
 	border-color: #3a5163; 
+	text-shadow: 0px 0px 5px black;
 }
 
+.bottomText {
+	font-family: Helvetica Neue;
+	color: #ebebeb;
+	text-align: center;
+	text-shadow: 0px 0px 5px black;
+}
+.bottomText ul {
+	list-style: none;
+}
+
+.houseInterface .houseList {
+	height: 800px;
+	overflow: scroll;
+}
+
+.houseInterface .mapWrapper {
+	height: 100%;
+}
+
+.houseInterface .houseList .list-group-item {
+	padding: 10px;
+	height: 100%;
+	width: 90%
+	text-align: center;
+	cursor: pointer;
+}
