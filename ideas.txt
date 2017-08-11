@@ -1,0 +1,4 @@
+Rule for submitting houses:
+Must have a picture of the sign with the name of the house permanently attached to the house, with the photograph including the address clearly visible. EXIF or a proper timestamp must also be included.
+
+Enter campuses by demand?`
