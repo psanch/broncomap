@@ -1,25 +1,43 @@
 var houseInformation = {
-	Name: 
-['Black Market', 
-'White House',
-'Another House',
-'The School'],
-	
-	Address:
-['Address: 1206 Market Street</br>Another Line',
-'Address: 860 Washington Street',
-'Address: 1234 Alameda',
-'Address: 78787 School School</br>This is the school'],
+		
+		Name: 
+	['Black Market',
+	'White House',	
+	'Skyy Box',
+	'OTR',
+	'Ghettos',
+	'Bellomys'],
+		
+		Address:
+	['1206 Market Street',
+	'860 Washington Street',
+	'977 Bellomy Street',
+	'531 Washington Street',
+	'841 Bellomy Street',
+	'850 Bellomy Street'],
 
-	Latitude:
-[37.3477714,
-37.3,
-37.35,
-37.34],
+		Info:
+	['ZBT House',
+	'ZBT House',
+	'Entrance to OTR Backyard',
+	'Day Party Hotspot',
+	'Swig Smoke Spot',
+	'Apartments'],
 
-	Longitude:
-[-121.9416224,
--121.9,
--121.94,
--121.89],
+		Latitude:
+	[37.345011,	//BM
+	37.348326,	//WH
+	37.345373,	//SB
+	37.345496,	//OTR
+	37.345965,	//GH
+	37.345626],	//BE
+
+		Longitude:
+	[-121.944970,	//BM
+	-121.944055,	//WH
+	-121.941716,	//SB
+	-121.941857,	//OTR
+	-121.939961,	//GH
+	-121.940099],
+
 }
