@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!--styles-->
+    <link rel="stylesheet" href="main.css">
+    <!--jquery api-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>SJSU House Map</title>
+  </head>
+
+  <body style="height: 100%;">
+
+    <span>
+        <div class="title" style="text-align: center;">
+            <h1>House Map</h1>
+        </div>
+    </span>
+
+
+
+    <!--This is the unused search bar
+
+    <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="searchBttn">Go!</button>
+          </span>
+          <input type="text" class="form-control" placeholder="Find a house..." id="houseSearch">
+        </div>
+      </div>  <div class="col-lg-4"></div>
+    </div>
+    -->
+
+    <br/>
+    <br/>
+
+    <!--wraps map for formatting-->
+    <div class="mapWrapper col-sm-8 col-xs-12">
+        <div id="map"></div>
+    </div>
+
+    <!--list of house names and descriptions-->
+    <div class="houseListWrap col-sm-4 col-xs-12">
+      <ul id="houseListUl" class="list-group">    
+      </ul>
+    </div>
+
+
+  </body>
+
+  <!--places text under map-->
+  <div class="buffer col-sm-4 col-xs-0"></div>    
+
+  <div class="bottomText col-sm-8 col-xs-12">
+      
+      <ul>
+        <li>Email placeholder@gmail.com with your house name, address, and a short description</li>
+
+        <li>Created and Maintained by Collin Seaman and Pedro Sanchez</li>
+      </ul>
+            
+      <small>We are not affiliated, endorsed by, or in any way officially connected with Santa Clara University or its affiliates.</small>
+  </div>
+
+<script type="text/javascript">partyMap.SJSU.makeHouseList();</script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--Bootstrap tips-->
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!--Google maps API-->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw6csekQDGjLcjkgFI9mpDbz0YG0aCFA&callback=partyMap.SJSU.initMap">
+  </script>
+  <!--house data file houseInformation-->
+  <script type="text/javascript" src="houses.js"></script>
+  <!--clickable html element scripts-->
+  <script type="text/javascript" src="events.js"></script>
+  <!--map behavior-->
+  <script type="text/javascript" src="mapAPI.js"></script>
+<html>

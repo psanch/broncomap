@@ -27,14 +27,13 @@ h1 {
 	list-style: none;
 }
 
-.houseInterface .houseList {
-	height: 50%;
+.houseListWrap {
+	height: 77.6%;
 	overflow: scroll;
 }
 
 .mapWrapper {
 	height: 80%;
-
 }
 
 #map {
@@ -43,10 +42,7 @@ h1 {
 }
 
 .houseListWrap .list-group-item {
-	padding: 10px;
-	height: 100%;
-	width: 90%
-	text-align: center;
+	padding: 9px;
 	cursor: pointer;
 }
 

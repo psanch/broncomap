@@ -1,21 +1,21 @@
-console.log(houseInformation.Name);
-var markerList = [];
+console.log(partyMap.SCU.houseInfoList);
 function initMap() {
   
   var infowindow = new google.maps.InfoWindow();
-  var myLatLng = {lat: 37.3477714, lng: -121.9416224};
+  var myLatLng = partyMap.SCU.center;
+  var mapZoom = partyMap.SCU.zoom;
+  
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
+    zoom: mapZoom,
     center: myLatLng
   });
   var i;
-  for(i=0; i<houseInformation.Name.length; i++) {
-      var housePos = new google.maps.LatLng(houseInformation.Latitude[i], houseInformation.Longitude[i]);
-      createMarker(housePos, houseInformation.Name[i], '<b>' + houseInformation.Name[i] + '</b>' + '</br>' + houseInformation.Address[i] + '</br>' + houseInformation.Info[i]);  
-      console.log(markerList[i].title);
+  for(i=0; i<partyMap.SCU.houseInfoList.length; i++) {
+      var houseInfo = partyMap.SCU.houseInfoList[i];
+      var housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
+      createMarker(housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info);  
+      console.log(partyMap.SCU.markers[i]);
     };
-
-    makeHouseList();
 
     function createMarker(latlon,title,iwContent) {
       var marker = new google.maps.Marker({
@@ -25,7 +25,7 @@ function initMap() {
           map: map
         });
 
-          markerList.push(marker);
+          partyMap.SCU.markers.push(marker);
 
           google.maps.event.addListener(marker, 'click', function () {
           infowindow.setContent(iwContent);
