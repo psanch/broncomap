@@ -5,23 +5,22 @@ body {
 .row .input-group {
 	font-family: Helvetica Neue;
 }
-span {
-}
 
-h1 {
+.title {
 	font-family: trajan;
 	color: #ebebeb;
 	border-radius: 10px;
 	border-color: #3a5163; 
 	text-shadow: 0px 0px 5px black;
+	text-align: center;
 }
 
 .bottomText {
 	font-family: Helvetica Neue;
 	color: #ebebeb;
-	text-align: center;
 	text-shadow: 0px 0px 5px black;
 	padding:0;
+	text-align: center;
 }
 .bottomText ul {
 	list-style: none;
@@ -44,8 +43,4 @@ h1 {
 .houseListWrap .list-group-item {
 	padding: 9px;
 	cursor: pointer;
-}
-
-.nav {
-	color: #ebebeb;
 }

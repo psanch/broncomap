@@ -1,28 +1,9 @@
+var listItems = document.getElementById("houseListUl").getElementsByTagName("li");
+var allMarkShown = true;
 
-var listAttribute = document.createAttribute("class");
-listAttribute.value = "list-group-item";
+listItems[0].addEventListener('click', function() { 
+  allMarkShown = partyMap.toggleAllMark(partyMap.SCU, allMarkShown);
+  console.log(allMarkShown);
+});
 
-var htmlList = document.getElementById("houseListUl");
-
-var houseListElements = [];
-
-var listItemContent;
-
-function makeHouseList(markers) {
-  var i;
-  for(i=0; i<houseInformation.Name.length; i++) {
-    var listAttributeClone = listAttribute.cloneNode();
-    houseListElements[i] = document.createElement("li");
-    houseListElements[i].setAttributeNode(listAttributeClone);
-    
-    listItemContent = document.createTextNode(houseInformation.Name[i] + ':    ' + houseInformation.Info[i])
-    
-    houseListElements[i].appendChild(listItemContent);
-    
-    htmlList.appendChild(houseListElements[i]); 
-  }
-}
-
-  function addMarkerEvent(markElement) {
-    
-  }
+partyMap.listItemsListeners(partyMap.SCU);
