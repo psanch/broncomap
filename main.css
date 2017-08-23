@@ -43,4 +43,6 @@ body {
 .houseListWrap .list-group-item {
 	padding: 9px;
 	cursor: pointer;
+	font-size: 14px;
+	font-family: Helvetica;
 }

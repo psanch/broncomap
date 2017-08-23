@@ -8,42 +8,42 @@ var partyMap = {
 			{
 				Name: 'Black Market',
 				Address: '1206 Market Street',
-				Info: 'ZBT House',
+				Info: ' (ZBT)',
 				Latitude: 37.345011,
 				Longitude: -121.944970
 			},
 			{
 				Name: 'White House',
 				Address: '860 Washington Street',
-				Info: 'ZBT House',
+				Info: ' (ZBT)',
 				Latitude: 37.348326,
 				Longitude: -121.944055,
 			},
 			{
 				Name: 'Skyy Box',
 				Address: '977 Bellomy Street',
-				Info: 'Entrance to OTR Backyard',
+				Info: ' ',
 				Latitude: 37.345373,
 				Longitude: -121.941716,
 			},
 			{
 				Name: 'OTR',
 				Address: '531 Washington Street',
-				Info: 'Day Party Hotspot',
+				Info: ' ',
 				Latitude: 37.345496,
 				Longitude: -121.941857,
 			},
 			{
 				Name: 'Ghettos',
 				Address: '841 Bellomy Street',
-				Info: 'Swig Smoke Spot',
+				Info: ' ',
 				Latitude: 37.345965,
 				Longitude: -121.939961,
 			},
 			{
 				Name: 'Bellomys',
 				Address: '850 Bellomy Street',
-				Info: 'Apartments',
+				Info: ' ',
 				Latitude: 37.345626,
 				Longitude: -121.940099,
 			},
@@ -54,7 +54,8 @@ var partyMap = {
 		center: {lat: 37.3477714, lng: -121.9416224},
 		zoom: 15,
 		markers: [],
-		isMarkShown: []
+		isMarkShown: [],
+		isInfoWindowShown: []
 	},//SCU
 
 //~~~~San Jose State University~~~//	
@@ -157,7 +158,7 @@ var partyMap = {
 	  var houseListElements = [];
 	  var htmlList = document.getElementById("houseListUl");
 	  var listAttribute = document.createAttribute("class");
-	  listAttribute.value = "list-group-item";
+	  listAttribute.value = "list-group-item active";
 
 	  for(i=0; i<school.houseInfoList.length; i++) {
 	  	var houseInfo = school.houseInfoList[i]
@@ -165,7 +166,7 @@ var partyMap = {
 	    houseListElements[i] = document.createElement("li");
 	    houseListElements[i].setAttributeNode(listAttributeClone);
 	    
-	    listItemContent = document.createTextNode(houseInfo.Name + ':    ' + houseInfo.Info)
+	    listItemContent = document.createTextNode(houseInfo.Name + houseInfo.Info)
 	    
 	    houseListElements[i].appendChild(listItemContent);
 	    
@@ -217,11 +218,21 @@ var partyMap = {
 		for(i = 0; i < school.markers.length; i++) {
 			school.markers[i].setMap(null);
 			school.isMarkShown[i] = false;
+			listItems[i+1].classList.remove("active");
 		}
 	},
 
 	showAllMark: function(school) {
 		var i;
+		listItems[0].addEventListener('click', function() { 
+			allMarkShown = partyMap.toggleAllMark(partyMap.SCU, allMarkShown);
+		});
+		listItems[0].addEventListener('mousedown', function() {
+			this.classList.add("active");
+		});
+		listItems[0].addEventListener('mouseup', function() {
+			this.classList.remove("active");
+		});
 		for(i = 0; i < school.markers.length; i++) {
 			school.markers[i].setMap(scuMap);
 			school.isMarkShown[i] = true;
@@ -238,6 +249,7 @@ var partyMap = {
 	addTheListener: function (school, i) {
 		listItems[i+1].addEventListener('click', function() { 
 			school.isMarkShown[i] = partyMap.toggleMark(partyMap.SCU, school.isMarkShown[i], i);
+			listItems[i+1].classList.toggle("active");
 		});
 	}
 };//partyMap
