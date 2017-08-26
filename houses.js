@@ -11,7 +11,7 @@ var partyMap = {
 				Info: ' (ZBT)',
 				Org: 'ZBT',
 				Latitude: 37.345011,
-				Longitude: -121.944970
+				Longitude: -121.944970,
 			}
 			,
 			{
@@ -55,6 +55,533 @@ var partyMap = {
 				Longitude: -121.940099,
 			}
 			,
+			{
+				Name: 'Three Palms',
+				Address: '830 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.345725,
+				Loongitude: -121.939643,
+			}
+			,
+			{
+				Name: '420',
+				Address: '420 Lafayette Way',
+				Info: ' ',
+				Latitude: 37.344398,
+				Loongitude: -121.940480,
+			}
+			,
+			{
+				Name: 'Atlantis',
+				Address: '860 Market Street',
+				Info:  ' ',
+				Latitude: 37.346466,
+				Loongitude: -121.940496,
+			}
+			,
+			{
+				Name: 'Barn',
+				Address: '985 Market St',
+				Info: ' ',
+				Latitude: 37.346395,
+				Loongitude: -121.942050,
+			}
+			,
+			{
+				Name: 'Belvisos',
+				Address:'495 Alviso Street',
+				Info: ' ',
+				Latitude: 37.345952,
+				Loongitude: -121.938937,
+			}
+			,
+			{
+				Name: 'Bermuda',
+				Address:'857 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.345947,
+				Loongitude: -121.940326,
+			}
+			,
+			{
+				Name: 'Billboard',
+				Address:'750 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.346181,
+				Loongitude: -121.938513,
+			}
+			,
+			{
+				Name: 'Blue',
+				Address:'612 Lafayette Street',
+				Info: ' ',
+				Latitude: 37.346545,
+				Loongitude: -121.941683,
+			}
+			,
+			{
+				Name: 'Blue Moon',
+				Address:'790 Locust Street',
+				Info: ' ',
+				Latitude: 37.345033,
+				Loongitude: -121.938419,
+			}
+			,
+			{
+				Name: 'Boombox',
+				Address:'800 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.345871,
+				Loongitude: -121.939394,
+			}
+			,
+			{
+				Name: 'Boo Radley',
+				Address:'819 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.346191,
+				Loongitude: -121.939721,
+			}
+			,
+			{
+				Name: 'Brown',
+				Address:'544 Alviso Street',
+				Info: ' ',
+				Latitude: 37.346491,
+				Loongitude:-121.939736,
+			}
+			,
+			{
+				Name: 'Buffalo',
+				Address:'635 Washington Street',
+				Info: ' ',
+				Latitude: 37.346421,
+				Loongitude: -121.942419,
+			}
+			,
+			{
+				Name: 'Cabana and Deck',
+				Address:'820 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.345877,
+				Loongitude: -121.939598,
+			}
+			,
+			{
+				Name: 'Cal Phi',
+				Address:'561 Washington Street',
+				Info: ' ',
+				Latitude: 37.345757,
+				Loongitude:-121.942061,
+			}
+			,
+			{
+				Name: 'Chalet',
+				Address:'831 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.346118,
+				Loongitude: -121.939836,
+			}
+			,
+			{
+				Name: 'Cloud Nine',
+				Address:'507 Lafayette Street',
+				Info: ' ',
+				Latitude: 37.345782,
+				Loongitude: -121.940669,
+			}
+			,
+			{
+				Name: 'Cobra',
+				Address:'541 Alviso Street',
+				Info: ' ',
+				Latitude: 37.346368,
+				Loongitude: -121.939246,
+			}
+			,
+			{
+				Name: 'Danger Zone',
+				Address:'473 Lafayette Way',
+				Info: ' ',
+				Latitude: 37.345246,
+				Loongitude: -121.940386,
+			}
+			,
+			{
+				Name: 'Dives',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345991,
+				Loongitude: -121.941296,
+			}
+			,
+			{
+				Name: 'Drive-Thrus',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346507,
+				Loongitude: -121.938989,
+			}
+			,
+			{
+				Name: 'Fight Club',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345498,
+				Loongitude: -121.937905,
+			}
+			,
+			{
+				Name: 'Fish Bowl',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346203,
+				Loongitude: -121.939505,
+			}
+			,
+			{
+				Name: 'Flamingo',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345343,
+				Loongitude: -121.938392,
+			}
+			,
+			{
+				Name: 'G-Spot',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346300,
+				Loongitude: -121.942347,
+			}
+			,
+			{
+				Name: 'Green',
+				Address: ' ',
+				Info: ' ',
+				Latitude:  37.346406,
+				Loongitude: -121.939602,
+			}
+			,
+			{
+				Name: 'Grove',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345996,
+				Loongitude: -121.940129,
+			}
+			,
+			{
+				Name: 'Halfway',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345446,
+				Loongitude: -121.938089,
+			}
+			,
+			{
+				Name: 'Happy Hour',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346008,
+				Loongitude: -121.942171,
+			}
+			,
+			{
+				Name: 'Hogwarts',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345275,
+				Loongitude: -121.939077,
+			}
+			,
+			{
+				Name: 'Hooters',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345506,
+				Loongitude: -121.941395,
+			}
+			,
+			{
+				Name: 'Ice',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346943,
+				Loongitude: -121.941807,
+			}
+			,
+			{
+				Name: 'Ihop',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346792,
+				Loongitude: -121.939432,
+			}
+			,
+			{
+				Name: 'Kappa',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345244,
+				Loongitude: -121.941085,
+			}
+			,
+			{
+				Name: 'Lafayettes',
+				Address: ' ',
+				Info: 'Laffs',
+				Latitude: 37.344871,
+				Loongitude: -121.940198,
+			}
+			,
+			{
+				Name: 'Lime',
+				Address: '875 Poplar St',
+				Info: ' ',
+				Latitude: 37.344201,
+				Loongitude: -121.939352,
+			}
+			,
+			{
+				Name: 'Maples',
+				Address:  ' ',
+				Info: 'Housing Community',
+				Latitude: 37.345768,
+				Loongitude: -121.938034,
+			}
+			,
+			{
+				Name: 'Mount Kisco',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345441,
+				Loongitude: -121.941533,
+			}
+			,
+			{
+				Name: 'Moonshine',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345350,
+				Loongitude: -121.939460,
+			}
+			,
+			{
+				Name: 'Oasis',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346035,
+				Loongitude: -121.940773,
+			}
+			,
+			{
+				Name: 'Office',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346731,
+				Loongitude: -121.939965,
+			}
+			,
+			{
+				Name: 'Paradise',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.344655,
+				Loongitude: -121.941448,
+			}
+			,
+			{
+				Name: 'Peach',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346677,
+				Loongitude: -121.941658,
+			}
+			,
+			{
+				Name: 'Penthouse',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345100,
+				Loongitude: -121.941460,
+			}
+			,
+			{
+				Name: 'Pi Palace',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345014,
+				Loongitude: -121.941644,
+			}
+			,
+			{
+				Name: 'Pink',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345850,
+				Loongitude: -121.940446,
+			}
+			,
+			{
+				Name: 'Porch',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345464,
+				Loongitude: -121.940526,
+			}
+			,
+			{
+				Name: 'Power',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345161,
+				Loongitude: -121.941278,
+			}
+			,
+			{
+				Name: 'Pub',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346839,
+				Loongitude: -121.941760,
+			}
+			,
+			{
+				Name: 'Rock Bottom',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.344901,
+				Loongitude: -121.939191,
+			}
+			,
+			{
+				Name: 'Sandlot',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345908,
+				Loongitude: -121.940740,
+			}
+			,
+			{
+				Name: 'Sexy',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.344548,
+				Loongitude: -121.940524,
+			}
+			,
+			{
+				Name: 'Shack',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346105,
+				Loongitude: -121.941872,
+			}
+			,
+			{
+				Name: 'Shipwreck',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345000,
+				Loongitude: -121.938861,
+			}
+			,
+			{
+				Name: 'Shoebox',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345599,
+				Loongitude: -121.941117,
+			}
+			,
+			{
+				Name: 'Soccer',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345633,
+				Loongitude: -121.942001,
+			}
+			,
+			{
+				Name: 'Spacejam',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.344839,
+				Loongitude: -121.939319,
+			}
+			,
+			{
+				Name: 'Stucco',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346954,
+				Loongitude: -121.939493,
+			}
+			,
+			{
+				Name: 'Sunshine',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346131,
+				Loongitude: -121.938679,
+			}
+			,
+			{
+				Name: 'Ten Spot',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345884,
+				Loongitude: -121.942125,
+			}
+			,
+			{
+				Name: 'Thunderdome',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346707,
+				Loongitude: -121.939786,
+			}
+			,
+			{
+				Name: 'Top Gun',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345706,
+				Loongitude: -121.941128,
+			}
+			,
+			{
+				Name: 'Tree House',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345260,
+				Loongitude: -121.938564,
+			}
+			,
+			{
+				Name: 'Yardhouse',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.344522,
+				Loongitude: -121.938595,
+			}
+			,
+			{
+				Name: 'Yellow',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.345866,
+				Loongitude: -121.941256,
+			}
+			,
+			{
+				Name: 'Zoo',
+				Address: ' ',
+				Info: ' ',
+				Latitude: 37.346208,
+				Loongitude: -121.941446,
+			}
 		],
 
 //SCU specific variables//
