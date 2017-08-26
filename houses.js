@@ -9,44 +9,52 @@ var partyMap = {
 				Name: 'Black Market',
 				Address: '1206 Market Street',
 				Info: ' (ZBT)',
+				Org: 'ZBT',
 				Latitude: 37.345011,
 				Longitude: -121.944970
-			},
+			}
+			,
 			{
 				Name: 'White House',
 				Address: '860 Washington Street',
 				Info: ' (ZBT)',
+				Org: 'ZBT',
 				Latitude: 37.348326,
 				Longitude: -121.944055,
-			},
+			}
+			,
 			{
 				Name: 'Skyy Box',
 				Address: '977 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345373,
 				Longitude: -121.941716,
-			},
+			}
+			,
 			{
 				Name: 'OTR',
 				Address: '531 Washington Street',
 				Info: ' ',
 				Latitude: 37.345496,
 				Longitude: -121.941857,
-			},
+			}
+			,
 			{
 				Name: 'Ghettos',
 				Address: '841 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345965,
 				Longitude: -121.939961,
-			},
+			}
+			,
 			{
 				Name: 'Bellomys',
 				Address: '850 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345626,
 				Longitude: -121.940099,
-			},
+			}
+			,
 		],
 
 //SCU specific variables//
@@ -55,7 +63,10 @@ var partyMap = {
 		zoom: 15,
 		markers: [],
 		isMarkShown: [],
-		isInfoWindowShown: []
+		allMarkShown: true,
+		isInfoWindowShown: [],
+		allMarkHidden: false,
+		windows: []
 	},//SCU
 
 //~~~~San Jose State University~~~//	
@@ -79,45 +90,6 @@ var partyMap = {
 
 //~~~~~FUNCTIONS~~~~~//
 
-/*	OLD INITMAP
-	initMap: function(school, element) {
-
-		var infowindow = new google.maps.InfoWindow();
-		var myLatLng = school.center;
-		var mapZoom = school.zoom;
-
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: mapZoom,
-			center: myLatLng
-		});
-
-		var i;
-
-
-		var houseInfo = school.houseInfoList[element];
-
-		var housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
-		createMarker(housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info);  
-
-
-		function createMarker(latlon,title,iwContent) {
-		  	var marker = new google.maps.Marker({
-				position: latlon,
-				title: title,
-				label: title[0],
-				map: map
-			});
-
-			markers.push(marker);
-
-			google.maps.event.addListener(marker, 'click', function () {
-				infowindow.setContent(iwContent);
-				infowindow.open(map, marker);
-		  	});
-		}
-	},//initMap
-*/
-
 	initMap: function(school) {
 
 		var myLatLng = school.center;
@@ -140,12 +112,15 @@ var partyMap = {
 			map: scuMap
 		});
 
-		partyMap.SCU.markers.push(marker);
-
-		google.maps.event.addListener(marker, 'click', function () {
+		marker.addListener('click', function() {
 			infowindow.setContent(iwContent);
 			infowindow.open(scuMap, marker);
-	  	});
+		});
+		partyMap.SCU.windows.push(infowindow);
+		partyMap.SCU.markers.push(marker);
+
+
+
 	},//createMarker
 
 	removeMarker: function(mark) {
@@ -158,7 +133,7 @@ var partyMap = {
 	  var houseListElements = [];
 	  var htmlList = document.getElementById("houseListUl");
 	  var listAttribute = document.createAttribute("class");
-	  listAttribute.value = "list-group-item active";
+	  listAttribute.value = "list-group-item";
 
 	  for(i=0; i<school.houseInfoList.length; i++) {
 	  	var houseInfo = school.houseInfoList[i]
@@ -174,31 +149,55 @@ var partyMap = {
 	  }
 	},//makehouselist
 
-	toggleAllMark: function(school, isShown) {
+/*	toggleAllMark: function(school) {
 	  var i;
 	  var houseInfo;
 	  var housePos;
-	  if(isShown == false) {
+	  var allButton = document.getElementById("houseListUl").getElementsByTagName("li")[0]
+	  if(school.allMarkShown == false) {
 	  	  partyMap.showAllMark(school);
-		  document.getElementById("houseListUl").getElementsByTagName("li")[0].innerHTML = "HIDE ALL";
-		  return true;
+		  allButton.innerHTML = "HIDE ALL";
 	  }
 	  else {
   		partyMap.hideAllMark(school);
-  		document.getElementById("houseListUl").getElementsByTagName("li")[0].innerHTML = "SHOW ALL";
-  		return false;
+  		allButton.innerHTML = "SHOW ALL";
+	  }
+	}, */
+
+	clickList: function(school, i) {
+
+	  var infowindow = new google.maps.InfoWindow();
+	  var houseInfo = school.houseInfoList[i];
+	  var j;
+	  var doit = true;
+	  var allButton = document.getElementById("houseListUl").getElementsByTagName("li")[0]
+	
+	  if(school.isMarkShown[i] == false) {
+		  	if(school.allMarkHidden == true) {
+		  	  	partyMap.toggleWindow(school, i);
+		  	  	school.allMarkHidden = false;
+		  	}
+			school.markers[i].setMap(scuMap);
+			school.isMarkShown[i] = true;
+	  }
+	  else {
+  		partyMap.toggleWindow(school, i);
 	  }
 	},
 
-	toggleMark: function(school, isShown, i) {
-	  if(isShown == false) {
-		  school.markers[i].setMap(scuMap);
-		  return true;
-	  }
-	  else {
-  		school.markers[i].setMap(null);
-  		return false;
-	  }
+	toggleWindow: function(school, i) {
+		console.log(school.isInfoWindowShown);
+		var infowindow = school.windows[i];
+		var houseInfo = school.houseInfoList[i];
+		if(school.isInfoWindowShown[i] == false) {
+			infowindow.setContent('<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info);
+			infowindow.open(scuMap, school.markers[i]);
+			school.isInfoWindowShown[i] = true;
+		}
+		else {
+			infowindow.close();
+			school.isInfoWindowShown[i] = false;
+		}
 	},
 
 	buildAllMark: function(school) {
@@ -208,8 +207,9 @@ var partyMap = {
 	  for(i = 0; i < school.houseInfoList.length; i++) {
 	    houseInfo = school.houseInfoList[i];
 	    housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
-	    partyMap.createMarker(housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info);  
+	    partyMap.createMarker(housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info, school);  
 	  	school.isMarkShown[i] = true;
+	  	school.isInfoWindowShown[i] = false;
 	  }
 	},
 
@@ -218,29 +218,28 @@ var partyMap = {
 		for(i = 0; i < school.markers.length; i++) {
 			school.markers[i].setMap(null);
 			school.isMarkShown[i] = false;
-			listItems[i+1].classList.remove("active");
+			school.isInfoWindowShown[i] = false;
+			console.log(school.isInfoWindowShown[i]);
 		}
+		school.allMarkHidden = true;
+		school.allMarkShown = false;
 	},
 
 	showAllMark: function(school) {
 		var i;
-		listItems[0].addEventListener('click', function() { 
-			allMarkShown = partyMap.toggleAllMark(partyMap.SCU, allMarkShown);
-		});
-		listItems[0].addEventListener('mousedown', function() {
-			this.classList.add("active");
-		});
-		listItems[0].addEventListener('mouseup', function() {
-			this.classList.remove("active");
-		});
 		for(i = 0; i < school.markers.length; i++) {
 			school.markers[i].setMap(scuMap);
 			school.isMarkShown[i] = true;
 		}
+		school.allMarkShown = true;
+		school.allMarkHidden = false;
 	},
 
 	listItemsListeners: function(school) {
 		var i;
+		listItems[0].addEventListener('click', function() { 
+			partyMap.hideAllMark(partyMap.SCU);
+		});
 		for(i = 0; i < school.markers.length; i++) {
 			partyMap.addTheListener(school, i);
 		}
@@ -248,8 +247,7 @@ var partyMap = {
 
 	addTheListener: function (school, i) {
 		listItems[i+1].addEventListener('click', function() { 
-			school.isMarkShown[i] = partyMap.toggleMark(partyMap.SCU, school.isMarkShown[i], i);
-			listItems[i+1].classList.toggle("active");
+		partyMap.clickList(partyMap.SCU, i);
 		});
 	}
 };//partyMap
