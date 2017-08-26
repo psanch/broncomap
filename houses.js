@@ -60,7 +60,7 @@ var partyMap = {
 				Address: '830 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345725,
-				Loongitude: -121.939643,
+				Longitude: -121.939643,
 			}
 			,
 			{
@@ -68,7 +68,7 @@ var partyMap = {
 				Address: '420 Lafayette Way',
 				Info: ' ',
 				Latitude: 37.344398,
-				Loongitude: -121.940480,
+				Longitude: -121.940480,
 			}
 			,
 			{
@@ -76,7 +76,7 @@ var partyMap = {
 				Address: '860 Market Street',
 				Info:  ' ',
 				Latitude: 37.346466,
-				Loongitude: -121.940496,
+				Longitude: -121.940496,
 			}
 			,
 			{
@@ -84,7 +84,7 @@ var partyMap = {
 				Address: '985 Market St',
 				Info: ' ',
 				Latitude: 37.346395,
-				Loongitude: -121.942050,
+				Longitude: -121.942050,
 			}
 			,
 			{
@@ -92,7 +92,7 @@ var partyMap = {
 				Address:'495 Alviso Street',
 				Info: ' ',
 				Latitude: 37.345952,
-				Loongitude: -121.938937,
+				Longitude: -121.938937,
 			}
 			,
 			{
@@ -100,7 +100,7 @@ var partyMap = {
 				Address:'857 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345947,
-				Loongitude: -121.940326,
+				Longitude: -121.940326,
 			}
 			,
 			{
@@ -108,7 +108,7 @@ var partyMap = {
 				Address:'750 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.346181,
-				Loongitude: -121.938513,
+				Longitude: -121.938513,
 			}
 			,
 			{
@@ -116,7 +116,7 @@ var partyMap = {
 				Address:'612 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.346545,
-				Loongitude: -121.941683,
+				Longitude: -121.941683,
 			}
 			,
 			{
@@ -124,7 +124,7 @@ var partyMap = {
 				Address:'790 Locust Street',
 				Info: ' ',
 				Latitude: 37.345033,
-				Loongitude: -121.938419,
+				Longitude: -121.938419,
 			}
 			,
 			{
@@ -132,7 +132,7 @@ var partyMap = {
 				Address:'800 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345871,
-				Loongitude: -121.939394,
+				Longitude: -121.939394,
 			}
 			,
 			{
@@ -140,7 +140,7 @@ var partyMap = {
 				Address:'819 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.346191,
-				Loongitude: -121.939721,
+				Longitude: -121.939721,
 			}
 			,
 			{
@@ -148,7 +148,7 @@ var partyMap = {
 				Address:'544 Alviso Street',
 				Info: ' ',
 				Latitude: 37.346491,
-				Loongitude:-121.939736,
+				Longitude:-121.939736,
 			}
 			,
 			{
@@ -156,7 +156,7 @@ var partyMap = {
 				Address:'635 Washington Street',
 				Info: ' ',
 				Latitude: 37.346421,
-				Loongitude: -121.942419,
+				Longitude: -121.942419,
 			}
 			,
 			{
@@ -164,7 +164,7 @@ var partyMap = {
 				Address:'820 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345877,
-				Loongitude: -121.939598,
+				Longitude: -121.939598,
 			}
 			,
 			{
@@ -172,7 +172,7 @@ var partyMap = {
 				Address:'561 Washington Street',
 				Info: ' ',
 				Latitude: 37.345757,
-				Loongitude:-121.942061,
+				Longitude:-121.942061,
 			}
 			,
 			{
@@ -180,7 +180,7 @@ var partyMap = {
 				Address:'831 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.346118,
-				Loongitude: -121.939836,
+				Longitude: -121.939836,
 			}
 			,
 			{
@@ -188,7 +188,7 @@ var partyMap = {
 				Address:'507 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.345782,
-				Loongitude: -121.940669,
+				Longitude: -121.940669,
 			}
 			,
 			{
@@ -196,7 +196,7 @@ var partyMap = {
 				Address:'541 Alviso Street',
 				Info: ' ',
 				Latitude: 37.346368,
-				Loongitude: -121.939246,
+				Longitude: -121.939246,
 			}
 			,
 			{
@@ -204,7 +204,7 @@ var partyMap = {
 				Address:'473 Lafayette Way',
 				Info: ' ',
 				Latitude: 37.345246,
-				Loongitude: -121.940386,
+				Longitude: -121.940386,
 			}
 			,
 			{
@@ -212,7 +212,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345991,
-				Loongitude: -121.941296,
+				Longitude: -121.941296,
 			}
 			,
 			{
@@ -220,7 +220,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346507,
-				Loongitude: -121.938989,
+				Longitude: -121.938989,
 			}
 			,
 			{
@@ -228,7 +228,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345498,
-				Loongitude: -121.937905,
+				Longitude: -121.937905,
 			}
 			,
 			{
@@ -236,7 +236,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346203,
-				Loongitude: -121.939505,
+				Longitude: -121.939505,
 			}
 			,
 			{
@@ -244,7 +244,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345343,
-				Loongitude: -121.938392,
+				Longitude: -121.938392,
 			}
 			,
 			{
@@ -252,7 +252,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346300,
-				Loongitude: -121.942347,
+				Longitude: -121.942347,
 			}
 			,
 			{
@@ -260,7 +260,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude:  37.346406,
-				Loongitude: -121.939602,
+				Longitude: -121.939602,
 			}
 			,
 			{
@@ -268,7 +268,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345996,
-				Loongitude: -121.940129,
+				Longitude: -121.940129,
 			}
 			,
 			{
@@ -276,7 +276,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345446,
-				Loongitude: -121.938089,
+				Longitude: -121.938089,
 			}
 			,
 			{
@@ -284,7 +284,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346008,
-				Loongitude: -121.942171,
+				Longitude: -121.942171,
 			}
 			,
 			{
@@ -292,7 +292,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345275,
-				Loongitude: -121.939077,
+				Longitude: -121.939077,
 			}
 			,
 			{
@@ -300,7 +300,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345506,
-				Loongitude: -121.941395,
+				Longitude: -121.941395,
 			}
 			,
 			{
@@ -308,7 +308,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346943,
-				Loongitude: -121.941807,
+				Longitude: -121.941807,
 			}
 			,
 			{
@@ -316,7 +316,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346792,
-				Loongitude: -121.939432,
+				Longitude: -121.939432,
 			}
 			,
 			{
@@ -324,7 +324,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345244,
-				Loongitude: -121.941085,
+				Longitude: -121.941085,
 			}
 			,
 			{
@@ -332,7 +332,7 @@ var partyMap = {
 				Address: ' ',
 				Info: 'Laffs',
 				Latitude: 37.344871,
-				Loongitude: -121.940198,
+				Longitude: -121.940198,
 			}
 			,
 			{
@@ -340,7 +340,7 @@ var partyMap = {
 				Address: '875 Poplar St',
 				Info: ' ',
 				Latitude: 37.344201,
-				Loongitude: -121.939352,
+				Longitude: -121.939352,
 			}
 			,
 			{
@@ -348,7 +348,7 @@ var partyMap = {
 				Address:  ' ',
 				Info: 'Housing Community',
 				Latitude: 37.345768,
-				Loongitude: -121.938034,
+				Longitude: -121.938034,
 			}
 			,
 			{
@@ -356,7 +356,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345441,
-				Loongitude: -121.941533,
+				Longitude: -121.941533,
 			}
 			,
 			{
@@ -364,7 +364,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345350,
-				Loongitude: -121.939460,
+				Longitude: -121.939460,
 			}
 			,
 			{
@@ -372,7 +372,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346035,
-				Loongitude: -121.940773,
+				Longitude: -121.940773,
 			}
 			,
 			{
@@ -380,7 +380,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346731,
-				Loongitude: -121.939965,
+				Longitude: -121.939965,
 			}
 			,
 			{
@@ -388,7 +388,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.344655,
-				Loongitude: -121.941448,
+				Longitude: -121.941448,
 			}
 			,
 			{
@@ -396,7 +396,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346677,
-				Loongitude: -121.941658,
+				Longitude: -121.941658,
 			}
 			,
 			{
@@ -404,7 +404,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345100,
-				Loongitude: -121.941460,
+				Longitude: -121.941460,
 			}
 			,
 			{
@@ -412,7 +412,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345014,
-				Loongitude: -121.941644,
+				Longitude: -121.941644,
 			}
 			,
 			{
@@ -420,7 +420,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345850,
-				Loongitude: -121.940446,
+				Longitude: -121.940446,
 			}
 			,
 			{
@@ -428,7 +428,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345464,
-				Loongitude: -121.940526,
+				Longitude: -121.940526,
 			}
 			,
 			{
@@ -436,7 +436,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345161,
-				Loongitude: -121.941278,
+				Longitude: -121.941278,
 			}
 			,
 			{
@@ -444,7 +444,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346839,
-				Loongitude: -121.941760,
+				Longitude: -121.941760,
 			}
 			,
 			{
@@ -452,7 +452,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.344901,
-				Loongitude: -121.939191,
+				Longitude: -121.939191,
 			}
 			,
 			{
@@ -460,7 +460,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345908,
-				Loongitude: -121.940740,
+				Longitude: -121.940740,
 			}
 			,
 			{
@@ -468,7 +468,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.344548,
-				Loongitude: -121.940524,
+				Longitude: -121.940524,
 			}
 			,
 			{
@@ -476,7 +476,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346105,
-				Loongitude: -121.941872,
+				Longitude: -121.941872,
 			}
 			,
 			{
@@ -484,7 +484,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345000,
-				Loongitude: -121.938861,
+				Longitude: -121.938861,
 			}
 			,
 			{
@@ -492,7 +492,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345599,
-				Loongitude: -121.941117,
+				Longitude: -121.941117,
 			}
 			,
 			{
@@ -500,7 +500,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345633,
-				Loongitude: -121.942001,
+				Longitude: -121.942001,
 			}
 			,
 			{
@@ -508,7 +508,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.344839,
-				Loongitude: -121.939319,
+				Longitude: -121.939319,
 			}
 			,
 			{
@@ -516,7 +516,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346954,
-				Loongitude: -121.939493,
+				Longitude: -121.939493,
 			}
 			,
 			{
@@ -524,7 +524,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346131,
-				Loongitude: -121.938679,
+				Longitude: -121.938679,
 			}
 			,
 			{
@@ -532,7 +532,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345884,
-				Loongitude: -121.942125,
+				Longitude: -121.942125,
 			}
 			,
 			{
@@ -540,7 +540,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346707,
-				Loongitude: -121.939786,
+				Longitude: -121.939786,
 			}
 			,
 			{
@@ -548,7 +548,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345706,
-				Loongitude: -121.941128,
+				Longitude: -121.941128,
 			}
 			,
 			{
@@ -556,7 +556,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345260,
-				Loongitude: -121.938564,
+				Longitude: -121.938564,
 			}
 			,
 			{
@@ -564,7 +564,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.344522,
-				Loongitude: -121.938595,
+				Longitude: -121.938595,
 			}
 			,
 			{
@@ -572,7 +572,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.345866,
-				Loongitude: -121.941256,
+				Longitude: -121.941256,
 			}
 			,
 			{
@@ -580,7 +580,7 @@ var partyMap = {
 				Address: ' ',
 				Info: ' ',
 				Latitude: 37.346208,
-				Loongitude: -121.941446,
+				Longitude: -121.941446,
 			}
 		],
 
@@ -732,6 +732,7 @@ var partyMap = {
 	  var houseInfo;
 	  var housePos;
 	  for(i = 0; i < school.houseInfoList.length; i++) {
+
 	    houseInfo = school.houseInfoList[i];
 	    housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
 	    partyMap.createMarker(housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info, school);  
