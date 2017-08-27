@@ -8,19 +8,91 @@ var partyMap = {
 			{
 				Name: 'Black Market',
 				Address: '1206 Market Street',
-				Info: ' (ZBT)',
+				Info: ' (Zeta Beta Tau)',
 				Org: 'ZBT',
 				Latitude: 37.345011,
 				Longitude: -121.944970,
 			}
 			,
 			{
-				Name: 'White House',
+				Name: 'Courtside',
 				Address: '860 Washington Street',
-				Info: ' (ZBT)',
+				Info: ' (Zeta Beta Tau)',
 				Org: 'ZBT',
 				Latitude: 37.348326,
 				Longitude: -121.944055,
+			}
+			,
+			{
+				Name: 'Zoo',
+				Address: '590 Lafayette Street',
+				Info: ' (Pi Kappa Alpha)',
+				Latitude: 37.346208,
+				Longitude: -121.941446,
+			}
+			,
+			{
+				Name: 'Penthouse',
+				Address: '966 Bellomy Street',
+				Info: ' (Pi Kappa Alpha)',
+				Latitude: 37.345100,
+				Longitude: -121.941460,
+			}
+			,
+			{
+				Name: 'Yellow',
+				Address: '540 Lafayette Street',
+				Info: ' (Sigma Pi)',
+				Latitude: 37.345866,
+				Longitude: -121.941256,
+			}
+			,
+			{
+				Name: 'Power',
+				Address: '950 Bellomy Street',
+				Info: ' (Sigma Pi)',
+				Latitude: 37.345161,
+				Longitude: -121.941278,
+			}
+			,
+			{
+				Name: 'Sexy',
+				Address: ' 430 Lafayette Way',
+				Info: ' (Kappa Sigma)',
+				Latitude: 37.344548,
+				Longitude: -121.940524,
+			}
+			,
+			{
+				Name: 'Ten Spot',
+				Address: ' 573 Washington Street',
+				Info: ' (Kappa Sigma)',
+				Latitude: 37.345884,
+				Longitude: -121.942125,
+			}
+			,
+			{
+				Name: 'OTR',
+				Address: '531 Washington Street',
+				Info: ' (Tau Kappa Epsilon)',
+				Latitude: 37.345496,
+				Longitude: -121.941857,
+			}
+			,
+			{
+				Name: 'Blue',
+				Address:'612 Lafayette Street',
+				Info: ' (Sigma Chi)',
+				Latitude: 37.346545,
+				Longitude: -121.941683,
+			}
+			,
+			{
+				Name: 'Cal Phi',
+				Address:'561 Washington Street',
+				Info: ' (Cal Phi)',
+				Latitude: 37.345757,
+				Longitude:-121.942061,
 			}
 			,
 			{
@@ -29,14 +101,6 @@ var partyMap = {
 				Info: ' ',
 				Latitude: 37.345373,
 				Longitude: -121.941716,
-			}
-			,
-			{
-				Name: 'OTR',
-				Address: '531 Washington Street',
-				Info: ' ',
-				Latitude: 37.345496,
-				Longitude: -121.941857,
 			}
 			,
 			{
@@ -112,14 +176,6 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Blue',
-				Address:'612 Lafayette Street',
-				Info: ' ',
-				Latitude: 37.346545,
-				Longitude: -121.941683,
-			}
-			,
-			{
 				Name: 'Blue Moon',
 				Address:'790 Locust Street',
 				Info: ' ',
@@ -168,14 +224,6 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Cal Phi',
-				Address:'561 Washington Street',
-				Info: ' ',
-				Latitude: 37.345757,
-				Longitude:-121.942061,
-			}
-			,
-			{
 				Name: 'Chalet',
 				Address:'831 Bellomy Street',
 				Info: ' ',
@@ -209,7 +257,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Dives',
-				Address: ' ',
+				Address: '560 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.345991,
 				Longitude: -121.941296,
@@ -217,7 +265,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Drive-Thrus',
-				Address: ' ',
+				Address: '775 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.346507,
 				Longitude: -121.938989,
@@ -225,7 +273,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Fight Club',
-				Address: ' ',
+				Address: '735 Locust Street',
 				Info: ' ',
 				Latitude: 37.345498,
 				Longitude: -121.937905,
@@ -233,7 +281,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Fish Bowl',
-				Address: ' ',
+				Address: '805 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.346203,
 				Longitude: -121.939505,
@@ -241,7 +289,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Flamingo',
-				Address: ' ',
+				Address: '765 Locust Street',
 				Info: ' ',
 				Latitude: 37.345343,
 				Longitude: -121.938392,
@@ -249,7 +297,7 @@ var partyMap = {
 			,
 			{
 				Name: 'G-Spot',
-				Address: ' ',
+				Address: '605 Washington Street',
 				Info: ' ',
 				Latitude: 37.346300,
 				Longitude: -121.942347,
@@ -257,7 +305,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Green',
-				Address: ' ',
+				Address: '536 Alviso Street',
 				Info: ' ',
 				Latitude:  37.346406,
 				Longitude: -121.939602,
@@ -265,7 +313,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Grove',
-				Address: ' ',
+				Address: '845 Bellomy',
 				Info: ' ',
 				Latitude: 37.345996,
 				Longitude: -121.940129,
@@ -273,15 +321,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Halfway',
-				Address: ' ',
-				Info: ' ',
+				Address: '745 Locust Street',
+				Info: '(Rugby)',
 				Latitude: 37.345446,
 				Longitude: -121.938089,
 			}
 			,
 			{
 				Name: 'Happy Hour',
-				Address: ' ',
+				Address: '587 Washington Street',
 				Info: ' ',
 				Latitude: 37.346008,
 				Longitude: -121.942171,
@@ -289,7 +337,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Hogwarts',
-				Address: ' ',
+				Address: '430 Alviso Street',
 				Info: ' ',
 				Latitude: 37.345275,
 				Longitude: -121.939077,
@@ -297,7 +345,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Hooters',
-				Address: ' ',
+				Address: '947 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345506,
 				Longitude: -121.941395,
@@ -305,7 +353,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Ice',
-				Address: ' ',
+				Address: '660 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.346943,
 				Longitude: -121.941807,
@@ -313,7 +361,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Ihop',
-				Address: ' ',
+				Address: '575 Alviso Street',
 				Info: ' ',
 				Latitude: 37.346792,
 				Longitude: -121.939432,
@@ -321,15 +369,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Kappa',
-				Address: ' ',
-				Info: ' ',
+				Address: '930 Bellomy Street',
+				Info: ' (Kappa Kappa Gamma)',
 				Latitude: 37.345244,
 				Longitude: -121.941085,
 			}
 			,
 			{
 				Name: 'Lafayettes',
-				Address: ' ',
+				Address: '431 Lafayette Way',
 				Info: 'Laffs',
 				Latitude: 37.344871,
 				Longitude: -121.940198,
@@ -345,7 +393,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Maples',
-				Address:  ' ',
+				Address:  '705 Varsi Place',
 				Info: 'Housing Community',
 				Latitude: 37.345768,
 				Longitude: -121.938034,
@@ -353,15 +401,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Mount Kisco',
-				Address: ' ',
-				Info: ' ',
+				Address: '961 Bellomy Street',
+				Info: '(Cal Phi)',
 				Latitude: 37.345441,
 				Longitude: -121.941533,
 			}
 			,
 			{
 				Name: 'Moonshine',
-				Address: ' ',
+				Address: '821 Alviso Street',
 				Info: ' ',
 				Latitude: 37.345350,
 				Longitude: -121.939460,
@@ -369,7 +417,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Oasis',
-				Address: ' ',
+				Address: '545 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.346035,
 				Longitude: -121.940773,
@@ -377,15 +425,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Office',
-				Address: ' ',
-				Info: ' ',
+				Address: '828 Market Street',
+				Info: '(Rugby)',
 				Latitude: 37.346731,
 				Longitude: -121.939965,
 			}
 			,
 			{
 				Name: 'Paradise',
-				Address: ' ',
+				Address: '471 Washington Street',
 				Info: ' ',
 				Latitude: 37.344655,
 				Longitude: -121.941448,
@@ -393,31 +441,23 @@ var partyMap = {
 			,
 			{
 				Name: 'Peach',
-				Address: ' ',
+				Address: '622 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.346677,
 				Longitude: -121.941658,
 			}
 			,
 			{
-				Name: 'Penthouse',
-				Address: ' ',
-				Info: ' ',
-				Latitude: 37.345100,
-				Longitude: -121.941460,
-			}
-			,
-			{
 				Name: 'Pi Palace',
-				Address: ' ',
-				Info: ' ',
+				Address: '986 Bellomy Street',
+				Info: '(Alpha Delta Pi)',
 				Latitude: 37.345014,
 				Longitude: -121.941644,
 			}
 			,
 			{
 				Name: 'Pink',
-				Address: ' ',
+				Address: '889 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345850,
 				Longitude: -121.940446,
@@ -425,23 +465,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Porch',
-				Address: ' ',
+				Address: '896 Bellomy Street',
 				Info: ' ',
 				Latitude: 37.345464,
 				Longitude: -121.940526,
 			}
 			,
 			{
-				Name: 'Power',
-				Address: ' ',
-				Info: ' ',
-				Latitude: 37.345161,
-				Longitude: -121.941278,
-			}
-			,
-			{
 				Name: 'Pub',
-				Address: ' ',
+				Address: '644 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.346839,
 				Longitude: -121.941760,
@@ -449,7 +481,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Rock Bottom',
-				Address: ' ',
+				Address: '810 Alviso Street',
 				Info: ' ',
 				Latitude: 37.344901,
 				Longitude: -121.939191,
@@ -457,23 +489,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Sandlot',
-				Address: ' ',
+				Address: '529 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.345908,
 				Longitude: -121.940740,
 			}
 			,
 			{
-				Name: 'Sexy',
-				Address: ' ',
-				Info: ' ',
-				Latitude: 37.344548,
-				Longitude: -121.940524,
-			}
-			,
-			{
 				Name: 'Shack',
-				Address: ' ',
+				Address: '986 Market Street',
 				Info: ' ',
 				Latitude: 37.346105,
 				Longitude: -121.941872,
@@ -481,7 +505,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Shipwreck',
-				Address: ' ',
+				Address: '410 Alviso Street',
 				Info: ' ',
 				Latitude: 37.345000,
 				Longitude: -121.938861,
@@ -489,7 +513,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Shoebox',
-				Address: ' ',
+				Address: '510 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.345599,
 				Longitude: -121.941117,
@@ -497,15 +521,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Soccer',
-				Address: ' ',
-				Info: ' ',
+				Address: '551 Washington Street',
+				Info: '(Sigma Pi)',
 				Latitude: 37.345633,
 				Longitude: -121.942001,
 			}
 			,
 			{
 				Name: 'Spacejam',
-				Address: ' ',
+				Address: '830 Alviso Street',
 				Info: ' ',
 				Latitude: 37.344839,
 				Longitude: -121.939319,
@@ -513,7 +537,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Stucco',
-				Address: ' ',
+				Address: '798 Market Street',
 				Info: ' ',
 				Latitude: 37.346954,
 				Longitude: -121.939493,
@@ -521,23 +545,15 @@ var partyMap = {
 			,
 			{
 				Name: 'Sunshine',
-				Address: ' ',
-				Info: ' ',
+				Address: '760 Bellomy Street',
+				Info: '(Rugby)',
 				Latitude: 37.346131,
 				Longitude: -121.938679,
 			}
 			,
 			{
-				Name: 'Ten Spot',
-				Address: ' ',
-				Info: ' ',
-				Latitude: 37.345884,
-				Longitude: -121.942125,
-			}
-			,
-			{
 				Name: 'Thunderdome',
-				Address: ' ',
+				Address: '564 Alviso Street',
 				Info: ' ',
 				Latitude: 37.346707,
 				Longitude: -121.939786,
@@ -545,7 +561,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Top Gun',
-				Address: ' ',
+				Address: '516 Lafayette Street',
 				Info: ' ',
 				Latitude: 37.345706,
 				Longitude: -121.941128,
@@ -553,7 +569,7 @@ var partyMap = {
 			,
 			{
 				Name: 'Tree House',
-				Address: ' ',
+				Address: '795 Locust Street',
 				Info: ' ',
 				Latitude: 37.345260,
 				Longitude: -121.938564,
@@ -561,27 +577,12 @@ var partyMap = {
 			,
 			{
 				Name: 'Yardhouse',
-				Address: ' ',
+				Address: '815 Poplar Street',
 				Info: ' ',
 				Latitude: 37.344522,
 				Longitude: -121.938595,
 			}
-			,
-			{
-				Name: 'Yellow',
-				Address: ' ',
-				Info: ' ',
-				Latitude: 37.345866,
-				Longitude: -121.941256,
-			}
-			,
-			{
-				Name: 'Zoo',
-				Address: ' ',
-				Info: ' ',
-				Latitude: 37.346208,
-				Longitude: -121.941446,
-			}
+			
 		],
 
 //SCU specific variables//
