@@ -96,35 +96,141 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Skyy Box',
-				Address: '977 Bellomy Street',
-				Info: ' ',
-				Latitude: 37.345373,
-				Longitude: -121.941716,
+				Name: 'Silver',
+				Address: '616 Washington Street',
+				Info: ' (Alpha Phi)',
+				Latitude: 37.346221,
+				Longitude: -121.942905,
 			}
 			,
 			{
-				Name: 'Ghettos',
-				Address: '841 Bellomy Street',
-				Info: ' ',
-				Latitude: 37.345965,
-				Longitude: -121.939961,
+				Name: 'Delta Gamma',
+				Address: '901 Poplar Street',
+				Info: ' (Delta Gamma)',
+				Latitude: 37.343915,
+				Longitude: -121.940181,
 			}
 			,
 			{
-				Name: 'Bellomys',
-				Address: '850 Bellomy Street',
-				Info: ' ',
-				Latitude: 37.345626,
-				Longitude: -121.940099,
+				Name: 'Theta Mansion',
+				Address: '981 Fremont Street',
+				Info: ' (Kappa Alpha Theta)',
+				Latitude: 37.352040,
+				Longitude: -121.945486,
 			}
 			,
 			{
-				Name: 'Three Palms',
+				Name: 'Kappa Kastle',
+				Address: '930 Bellomy Street',
+				Info: ' (Kappa Kappa Gamma)',
+				Latitude: 37.345244,
+				Longitude: -121.941085,
+			}
+			,
+			{
+				Name: 'Pi Palace',
+				Address: '471 Washington Street',
+				Info: ' (Alpha Delta Pi)',
+				Latitude: 37.344655,
+				Longitude: -121.941448,
+			}
+			,
+			{
+				Name: 'Swig Hall',
+				Address: '',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.347061,
+				Longitude: -121.940259,
+			}
+			,
+			{
+				Name: 'Dunne Hall',
+				Address: '',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.346810,
+				Longitude: -121.941107,
+			}
+			,
+			{
+				Name: 'McLaughlin & Walsh Halls',
+				Address: '',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.347472,
+				Longitude: -121.940990,
+			}
+			,
+			{
+				Name: 'Graham Hall',
+				Address: '',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.347490,
+				Longitude: -121.937724,
+			}
+			,
+			{
+				Name: 'Sanfilippo',
+				Address: '',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.347576,
+				Longitude: -121.935985,
+			}
+			,
+			{
+				Name: 'Campisi Hall',
+				Address: '',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.347721,
+				Longitude: -121.936664,
+			}
+			,
+			{
+				Name: 'Sobrato Hall',
+				Address: '',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.346759,
+				Longitude: -121.936125,
+			}
+			,
+			{
+				Name: 'Casa Italiana',
+				Address: ' ',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.346936,
+				Longitude: -121.935088,
+			}
+			,
+			{
+				Name: 'Nobili Hall',
+				Address: ' ',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.3484498,
+				Longitude: -121.9417698,
+			}
+			,
+			{
+				Name: 'University Villas',
+				Address: '1270 Campbell Avenue',
+				Info: ' ',
+				Type: 'residencehall',
+				Latitude: 37.349810,
+				Longitude: -121.931322,
+			}
+			,
+			{
+				Name: '3 Palms',
 				Address: '830 Bellomy Street',
 				Info: ' ',
-				Latitude: 37.345725,
-				Longitude: -121.939643,
+				Latitude: 37.345735,
+				Longitude: -121.939674,
 			}
 			,
 			{
@@ -149,6 +255,14 @@ var partyMap = {
 				Info: ' ',
 				Latitude: 37.346395,
 				Longitude: -121.942050,
+			}
+			,
+			{
+				Name: 'Bellomys',
+				Address: '850 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.345626,
+				Longitude: -121.940099,
 			}
 			,
 			{
@@ -216,11 +330,19 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Burrows',
+				Address: '680 Lafayette Street',
+				Info: ' ',
+				Latitude: 37.347154,
+				Longitude: -121.941954,
+			}
+			,
+			{
 				Name: 'Cabana and Deck',
 				Address:'820 Bellomy Street',
 				Info: ' ',
-				Latitude: 37.345877,
-				Longitude: -121.939598,
+				Latitude: 37.345795,
+				Longitude: -121.939552,
 			}
 			,
 			{
@@ -248,11 +370,51 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Corner',
+				Address: '890 Washington Street',
+				Info: ' ',
+				Latitude: 37.348568,
+				Longitude: -121.944177,
+			}
+			,
+			{
+				Name: 'Cornerpocket',
+				Address:'1199 Market Street',
+				Info: ' ',
+				Latitude: 37.345502,
+				Longitude: -121.944762,
+			}
+			,
+			{
+				Name: 'Countdown',
+				Address: '3210 The Alameda',
+				Info: ' ',
+				Latitude: 37.351586,
+				Longitude: -121.940425,
+			}
+			,
+			{
+				Name: 'Cozy',
+				Address: '655 Washington Street',
+				Info: ' ',
+				Latitude: 37.346654,
+				Longitude: -121.942520,
+			}
+			,
+			{
 				Name: 'Danger Zone',
 				Address:'473 Lafayette Way',
 				Info: ' ',
 				Latitude: 37.345246,
 				Longitude: -121.940386,
+			}
+			,
+			{
+				Name: 'Domicilio Apartments',
+				Address: '431 El Camino Real',
+				Info: ' ',
+				Latitude: 37.347194,
+				Longitude: -121.931649,
 			}
 			,
 			{
@@ -293,6 +455,14 @@ var partyMap = {
 				Info: ' ',
 				Latitude: 37.345343,
 				Longitude: -121.938392,
+			}
+			,
+			{
+				Name: 'Ghettos',
+				Address: '841 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.346106,
+				Longitude: -121.940041,
 			}
 			,
 			{
@@ -349,6 +519,23 @@ var partyMap = {
 				Info: ' ',
 				Latitude: 37.345506,
 				Longitude: -121.941395,
+			}
+			,
+			{
+				Name: 'Jump Off',
+				Address: '671 Franklin Street',
+				Info: ' ',
+				Latitude: 37.351554,
+				Longitude: -121.940185,
+			}
+			,
+			{
+				Name: 'Ibiza',
+				Address: '1272 Market Street',
+				Info: '',
+				Org: '',
+				Latitude: 37.344768,
+				Longitude: -121.945538,
 			}
 			,
 			{
@@ -416,6 +603,14 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Neon',
+				Address: '985 Lewis Street',
+				Info: ' ',
+				Latitude: 37.353832,
+				Longitude: -121.946570,
+			}
+			,
+			{
 				Name: 'Oasis',
 				Address: '545 Lafayette Street',
 				Info: ' ',
@@ -437,6 +632,14 @@ var partyMap = {
 				Info: ' ',
 				Latitude: 37.344655,
 				Longitude: -121.941448,
+			}
+			,
+			{
+				Name: 'Parks Central Apartment',
+				Address: '1050 Benton Street',
+				Info: ' ',
+				Latitude: 37.349744,
+				Longitude: -121.945811,
 			}
 			,
 			{
@@ -496,6 +699,14 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Skyy Box',
+				Address: '977 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.345373,
+				Longitude: -121.941716,
+			}
+			,
+			{
 				Name: 'Shack',
 				Address: '986 Market Street',
 				Info: ' ',
@@ -533,6 +744,22 @@ var partyMap = {
 				Info: ' ',
 				Latitude: 37.344839,
 				Longitude: -121.939319,
+			}
+			,
+			{
+				Name: 'Speakeasy',
+				Address: '1243 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.344243,
+				Longitude: -121.944958,
+			}
+			,
+			{
+				Name: 'Strip Club',
+				Address: '1341 Bellomy Street',
+				Info: ' ',
+				Latitude: 37.343887,
+				Longitude: -121.946097,
 			}
 			,
 			{
@@ -576,6 +803,14 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Wolf',
+				Address: '1188 Sherman Street',
+				Info: ' ',
+				Latitude: 37.353053,
+				Longitude: -121.940325,
+			}
+			,
+			{
 				Name: 'Yardhouse',
 				Address: '815 Poplar Street',
 				Info: ' ',
@@ -584,17 +819,17 @@ var partyMap = {
 			}
 			
 		],
-
 //SCU specific variables//
 
-		center: {lat: 37.3477714, lng: -121.9416224},
-		zoom: 15,
+		center: {lat: 37.346313, lng: -121.941424},
+		zoom: 17,
 		markers: [],
 		isMarkShown: [],
 		allMarkShown: true,
 		isInfoWindowShown: [],
 		allMarkHidden: false,
-		windows: []
+		windows: [],
+		map
 	},//SCU
 
 //~~~~San Jose State University~~~//	
@@ -612,7 +847,7 @@ var partyMap = {
 		],
 		
 		center: {lat: 37.335912, lng: -121.880007},
-		zoom: 14,
+		zoom: 16,
 		markers: [],
 	},//SJSU
 
@@ -627,32 +862,35 @@ var partyMap = {
 			zoom: mapZoom,
 			center: myLatLng
 		});
-		return map;
+		school.map = map;
 	},//initMap
 
 
-	createMarker: function(latlon,title,iwContent, map) {
+	createMarker: function(i,school,latlon,title,iwContent, map) {
 	  	var infowindow = new google.maps.InfoWindow();
+	  	var houseInfo = school.houseInfoList[i];
 	  	var marker = new google.maps.Marker({
 			position: latlon,
 			title: title,
-			label: title[0],
-			map: scuMap
+			map: school.map,
+			animation: google.maps.Animation.DROP
 		});
+
+		switch(houseInfo.Type) {
+			case 'residencehall':
+				marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+		}
 
 		marker.addListener('click', function() {
 			infowindow.setContent(iwContent);
-			infowindow.open(scuMap, marker);
+			infowindow.open(school.map, marker);
 		});
 		partyMap.SCU.windows.push(infowindow);
 		partyMap.SCU.markers.push(marker);
-
-
-
 	},//createMarker
 
-	removeMarker: function(mark) {
-		partyMap.SCU.markers[mark].setMap(null);
+	removeMarker: function(mark, school) {
+		school.markers[mark].setMap(null);
 	},
 
 	makeHouseList: function(school) {
@@ -705,7 +943,7 @@ var partyMap = {
 		  	  	partyMap.toggleWindow(school, i);
 		  	  	school.allMarkHidden = false;
 		  	}
-			school.markers[i].setMap(scuMap);
+			school.markers[i].setMap(school.map);
 			school.isMarkShown[i] = true;
 	  }
 	  else {
@@ -719,7 +957,7 @@ var partyMap = {
 		var houseInfo = school.houseInfoList[i];
 		if(school.isInfoWindowShown[i] == false) {
 			infowindow.setContent('<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info);
-			infowindow.open(scuMap, school.markers[i]);
+			infowindow.open(school.map, school.markers[i]);
 			school.isInfoWindowShown[i] = true;
 		}
 		else {
@@ -728,15 +966,28 @@ var partyMap = {
 		}
 	},
 
+		createMapsLink: function(school, i) {
+		var houseInfo = school.houseInfoList[i]
+		var a = document.createElement('a');
+		var linkText = document.createTextNode("View in Google Maps");
+		var linkAddress = 'https://maps.google.com?q=' + houseInfo.Latitude + ',' + houseInfo.Longitude;
+		a.appendChild(linkText);
+		a.title = "View in Google Maps";
+		a.href = linkAddress;
+		return a;
+	},
+
 	buildAllMark: function(school) {
 	  var i;
 	  var houseInfo;
 	  var housePos;
+	  var a;
 	  for(i = 0; i < school.houseInfoList.length; i++) {
 
+	  	mapsLink = partyMap.createMapsLink(school, i);
 	    houseInfo = school.houseInfoList[i];
 	    housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
-	    partyMap.createMarker(housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info, school);  
+	    partyMap.createMarker(i,school,housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info + '</br>' + mapsLink, school);  
 	  	school.isMarkShown[i] = true;
 	  	school.isInfoWindowShown[i] = false;
 	  }
@@ -757,7 +1008,7 @@ var partyMap = {
 	showAllMark: function(school) {
 		var i;
 		for(i = 0; i < school.markers.length; i++) {
-			school.markers[i].setMap(scuMap);
+			school.markers[i].setMap(school.map);
 			school.isMarkShown[i] = true;
 		}
 		school.allMarkShown = true;
@@ -767,7 +1018,7 @@ var partyMap = {
 	listItemsListeners: function(school) {
 		var i;
 		listItems[0].addEventListener('click', function() { 
-			partyMap.hideAllMark(partyMap.SCU);
+			partyMap.hideAllMark(school);
 		});
 		for(i = 0; i < school.markers.length; i++) {
 			partyMap.addTheListener(school, i);
@@ -776,7 +1027,7 @@ var partyMap = {
 
 	addTheListener: function (school, i) {
 		listItems[i+1].addEventListener('click', function() { 
-		partyMap.clickList(partyMap.SCU, i);
+		partyMap.clickList(school, i);
 		});
 	}
 };//partyMap
