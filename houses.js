@@ -829,7 +829,7 @@ var partyMap = {
 		isInfoWindowShown: [],
 		allMarkHidden: false,
 		windows: [],
-		map
+		map,
 	},//SCU
 
 //~~~~San Jose State University~~~//	
@@ -882,8 +882,9 @@ var partyMap = {
 		}
 		partyMap.SCU.windows.push(infowindow);
 		school.windows[i].setContent(iwContent);
+		
 		marker.addListener('click', function() {
-			school.windows[i].open(school.map, marker);
+			partyMap.windowSwitch(school, i);
 		});
 		partyMap.SCU.markers.push(marker);
 	},//createMarker
@@ -928,25 +929,30 @@ var partyMap = {
 
 	clickList: function(school, i) {
 
-	  var infowindow = new google.maps.InfoWindow();
-	  var houseInfo = school.houseInfoList[i];
-	  var j;
-	  var doit = true;
-	  var allButton = document.getElementById("houseListUl").getElementsByTagName("li")[0]
-	
+	  var allButtons = document.getElementById("houseListUl").getElementsByTagName("li");
+
 	  if(school.isMarkShown[i] == false) {
-		  	if(school.allMarkHidden == true) {
-		  	  	partyMap.toggleWindow(school, i);
-		  	  	school.allMarkHidden = false;
-		  	}
 			school.markers[i].setMap(school.map);
-			school.isMarkShown[i] = true;
 	  }
-	  else {
-  		partyMap.toggleWindow(school, i);
-	  }
+  		partyMap.windowSwitch(school, i);
+		school.isMarkShown[i] = true;
+		listItems[i].classList.add("active");
+		if(lastItemClicked != listItems[i]) {
+			listItems[i].classList.add("active");
+			lastItemClicked.classList.remove("active");
+			lastItemClicked = allButtons[i];
+		}
 	},
 
+	windowSwitch: function(school, i) {
+		school.windows[i].open(school.map, school.markers[i]);
+		if(lastWindowShown != school.windows[i]) {
+			lastWindowShown.close();
+			lastWindowShown = school.windows[i];
+		}
+	},
+
+	//currently unused//
 	toggleWindow: function(school, i) {
 		var infowindow = school.windows[i];
 		var houseInfo = school.houseInfoList[i];
@@ -975,6 +981,7 @@ var partyMap = {
 	  var i;
 	  var houseInfo;
 	  var housePos;
+	  var allButtons = document.getElementById("houseListUl").getElementsByTagName("li");
 	  for(i = 0; i < school.houseInfoList.length; i++) {
 
 	  	mapsLink = partyMap.createMapsLink(school, i);
@@ -984,6 +991,8 @@ var partyMap = {
 	  	school.isMarkShown[i] = true;
 	  	school.isInfoWindowShown[i] = false;
 	  }
+	  school.windows[0].open(school.map, school.markers[0]);
+	  allButtons[0].classList.add("active");
 	},
 
 	hideAllMark: function(school) {
@@ -994,6 +1003,7 @@ var partyMap = {
 			school.isMarkShown[i] = false;
 			school.isInfoWindowShown[i] = false;
 		}
+		lastItemClicked.classList.remove("active");
 		school.allMarkHidden = true;
 		school.allMarkShown = false;
 	},
@@ -1025,8 +1035,8 @@ var partyMap = {
 
 	addTheListener: function (school, i) {
 		listItems[i].addEventListener('click', function() { 
-		partyMap.clickList(school, i);
-		});
+			partyMap.clickList(school, i);
+		}, {passive: true});
 	}
 };//partyMap
 

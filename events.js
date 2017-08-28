@@ -1,2 +1,4 @@
 var listItems = document.getElementById("houseListUl").getElementsByTagName("li");
+var lastWindowShown = partyMap.SCU.windows[0];
+var lastItemClicked = listItems[0];
 partyMap.listItemsListeners(partyMap.SCU);
