@@ -17,27 +17,9 @@
 
   <body style="height: 100%;">
 
-    </br>
     <div class="title">
         <h1>Bronco Map: Santa Clara House Names and Addresses</h1>
     </div>
-
-    <!--This is the unused search bar
-
-    <div class="col-lg-4"></div>
-      <div class="col-lg-4">
-        <div class="input-group">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button" id="searchBttn">Go!</button>
-          </span>
-          <input type="text" class="form-control" placeholder="Find a house..." id="houseSearch">
-        </div>
-      </div>  <div class="col-lg-4"></div>
-    </div>
-    -->
-
-    <br/>
-    <br/>
 
     <!--wraps map for formatting-->
     <div class="mapWrapper col-sm-8 col-xs-12">
@@ -77,20 +59,15 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <!--Google maps API-->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw6csekQDGjLcjkgFI9mpDbz0YG0aCFA">
-  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw6csekQDGjLcjkgFI9mpDbz0YG0aCFA"></script>
   <!--house data file houseInformation-->
   <script type="text/javascript" src="houses.js"></script>
-  <!--map behavior-->
-  <script type="text/javascript" src="mapAPI.js"></script>
-  
+  <!--loads map div-->
   <script type="text/javascript">scuMap = partyMap.initMap(partyMap.SCU);</script>
   <!--loads list of houses-->
   <script type="text/javascript">partyMap.makeHouseList(partyMap.SCU);</script>
-
+  <!--loads markers and infowindows-->
   <script type="text/javascript">partyMap.buildAllMark(partyMap.SCU);</script>
-
-    <!--clickable html element scripts-->
+  <!--clickable html element scripts-->
   <script type="text/javascript" src="events.js"></script>
 <html>

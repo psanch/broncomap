@@ -866,7 +866,7 @@ var partyMap = {
 	},//initMap
 
 
-	createMarker: function(i,school,latlon,title,iwContent, map) {
+	createMarker: function(i, school, latlon, title, iwContent, map) {
 	  	var infowindow = new google.maps.InfoWindow();
 	  	var houseInfo = school.houseInfoList[i];
 	  	var marker = new google.maps.Marker({
@@ -880,12 +880,11 @@ var partyMap = {
 			case 'residencehall':
 				marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
 		}
-
-		marker.addListener('click', function() {
-//			infowindow.setContent(iwContent);
-			infowindow.open(school.map, marker);
-		});
 		partyMap.SCU.windows.push(infowindow);
+		school.windows[i].setContent(iwContent);
+		marker.addListener('click', function() {
+			school.windows[i].open(school.map, marker);
+		});
 		partyMap.SCU.markers.push(marker);
 	},//createMarker
 
@@ -952,7 +951,6 @@ var partyMap = {
 		var infowindow = school.windows[i];
 		var houseInfo = school.houseInfoList[i];
 		if(school.isInfoWindowShown[i] == false) {
-			infowindow.setContent('<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info);
 			infowindow.open(school.map, school.markers[i]);
 			school.isInfoWindowShown[i] = true;
 		}
@@ -964,26 +962,25 @@ var partyMap = {
 
 	createMapsLink: function(school, i) {
 		var houseInfo = school.houseInfoList[i]
-		var a = document.createElement('a');
+		var mapsLink = document.createElement('a');
 		var linkText = document.createTextNode("View in Google Maps");
 		var linkAddress = 'https://maps.google.com?q=' + houseInfo.Latitude + ',' + houseInfo.Longitude;
-		a.appendChild(linkText);
-		a.title = "View in Google Maps";
-		a.href = linkAddress;
-		return a;
+		mapsLink.appendChild(linkText);
+//		mapsLink.title = "View in Google Maps";
+		mapsLink.href = linkAddress;
+		return mapsLink;
 	},
 
 	buildAllMark: function(school) {
 	  var i;
 	  var houseInfo;
 	  var housePos;
-	  var a;
 	  for(i = 0; i < school.houseInfoList.length; i++) {
 
 	  	mapsLink = partyMap.createMapsLink(school, i);
 	    houseInfo = school.houseInfoList[i];
 	    housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
-	    partyMap.createMarker(i,school,housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info + '</br>' + mapsLink, school);  
+	    partyMap.createMarker(i,school,housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info, school);  
 	  	school.isMarkShown[i] = true;
 	  	school.isInfoWindowShown[i] = false;
 	  }
