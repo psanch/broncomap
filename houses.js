@@ -989,6 +989,7 @@ var partyMap = {
 	hideAllMark: function(school) {
 		var i;
 		for(i = 0; i < school.markers.length; i++) {
+			school.windows[i].close();
 			school.markers[i].setMap(null);
 			school.isMarkShown[i] = false;
 			school.isInfoWindowShown[i] = false;
@@ -1010,8 +1011,12 @@ var partyMap = {
 	listItemsListeners: function(school) {
 		var i;
 		var hideAllButton = document.getElementById('hideall');
+		var showAllButton = document.getElementById('showall');
 		hideAllButton.addEventListener('click', function() { 
 			partyMap.hideAllMark(school);
+		});
+		showAllButton.addEventListener('click', function() {
+			partyMap.showAllMark(school);
 		});
 		for(i = 0; i < school.markers.length; i++) {
 			partyMap.addTheListener(school, i);
