@@ -882,7 +882,7 @@ var partyMap = {
 		}
 
 		marker.addListener('click', function() {
-			infowindow.setContent(iwContent);
+//			infowindow.setContent(iwContent);
 			infowindow.open(school.map, marker);
 		});
 		partyMap.SCU.windows.push(infowindow);
@@ -906,11 +906,8 @@ var partyMap = {
 	    var listAttributeClone = listAttribute.cloneNode();
 	    houseListElements[i] = document.createElement("li");
 	    houseListElements[i].setAttributeNode(listAttributeClone);
-	    
 	    listItemContent = document.createTextNode(houseInfo.Name + houseInfo.Info)
-	    
 	    houseListElements[i].appendChild(listItemContent);
-	    
 	    htmlList.appendChild(houseListElements[i]);
 	  }
 	},//makehouselist
@@ -952,7 +949,6 @@ var partyMap = {
 	},
 
 	toggleWindow: function(school, i) {
-		console.log(school.isInfoWindowShown);
 		var infowindow = school.windows[i];
 		var houseInfo = school.houseInfoList[i];
 		if(school.isInfoWindowShown[i] == false) {
@@ -966,7 +962,7 @@ var partyMap = {
 		}
 	},
 
-		createMapsLink: function(school, i) {
+	createMapsLink: function(school, i) {
 		var houseInfo = school.houseInfoList[i]
 		var a = document.createElement('a');
 		var linkText = document.createTextNode("View in Google Maps");
@@ -999,7 +995,6 @@ var partyMap = {
 			school.markers[i].setMap(null);
 			school.isMarkShown[i] = false;
 			school.isInfoWindowShown[i] = false;
-			console.log(school.isInfoWindowShown[i]);
 		}
 		school.allMarkHidden = true;
 		school.allMarkShown = false;
@@ -1017,7 +1012,8 @@ var partyMap = {
 
 	listItemsListeners: function(school) {
 		var i;
-		listItems[0].addEventListener('click', function() { 
+		var hideAllButton = document.getElementById('hideall');
+		hideAllButton.addEventListener('click', function() { 
 			partyMap.hideAllMark(school);
 		});
 		for(i = 0; i < school.markers.length; i++) {
@@ -1026,7 +1022,7 @@ var partyMap = {
 	},
 
 	addTheListener: function (school, i) {
-		listItems[i+1].addEventListener('click', function() { 
+		listItems[i].addEventListener('click', function() { 
 		partyMap.clickList(school, i);
 		});
 	}
