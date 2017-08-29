@@ -370,7 +370,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Corner',
+				Name: 'Crown',
 				Address: '890 Washington Street',
 				Info: ' ',
 				Latitude: 37.348568,
