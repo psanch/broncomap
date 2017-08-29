@@ -968,6 +968,16 @@ var partyMap = {
 		switch(houseInfo.Type) {
 			case 'residencehall':
 				marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+				break;
+
+			case 'greek':
+				marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+				break;
+				
+			case 'offcampus':
+				marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
+				break;
+
 		}
 
 		partyMap.SCU.windows.push(infowindow);
