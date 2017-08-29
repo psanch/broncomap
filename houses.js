@@ -370,7 +370,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Crown',
+				Name: 'Corner',
 				Address: '890 Washington Street',
 				Info: ' ',
 				Latitude: 37.348568,
@@ -825,9 +825,9 @@ var partyMap = {
 		zoom: 17,
 		markers: [],
 		isMarkShown: [],
-		allMarkShown: true,
+		allMarkShown: false,
 		isInfoWindowShown: [],
-		allMarkHidden: false,
+		allMarkHidden: true,
 		windows: [],
 		map,
 	},//SCU
@@ -872,19 +872,19 @@ var partyMap = {
 	  	var marker = new google.maps.Marker({
 			position: latlon,
 			title: title,
-			map: school.map,
-			animation: google.maps.Animation.DROP
+			map: null
 		});
 
 		switch(houseInfo.Type) {
 			case 'residencehall':
 				marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
 		}
+
 		partyMap.SCU.windows.push(infowindow);
 		school.windows[i].setContent(iwContent);
 		
 		marker.addListener('click', function() {
-			partyMap.windowSwitch(school, i);
+			partyMap.clickList(school, i);
 		});
 		partyMap.SCU.markers.push(marker);
 	},//createMarker
@@ -929,26 +929,30 @@ var partyMap = {
 
 	clickList: function(school, i) {
 
-	  var allButtons = document.getElementById("houseListUl").getElementsByTagName("li");
-
-	  if(school.isMarkShown[i] == false) {
+/*	  if(school.isMarkShown[i] == false) {
 			school.markers[i].setMap(school.map);
-	  }
-  		partyMap.windowSwitch(school, i);
+			school.isMarkShown[i] = true;
+			console.log("show");
+	  }	*/
+  		school.markers[i].setMap(school.map);
+  		school.windows[i].open(school.map, school.markers[i]);
 		school.isMarkShown[i] = true;
+  		if(school.allMarkShown == false) {
+  			partyMap.switch(school, i);
+  		}
 		listItems[i].classList.add("active");
-		if(lastItemClicked != listItems[i]) {
+	},
+
+	switch: function(school, i) {
+		var allButtons = document.getElementById("houseListUl").getElementsByTagName("li");
+		if(lastWindowShown != school.windows[i]) {
+			lastWindowShown.close();
+			lastMarkerShown.setMap(null);
+			lastWindowShown = school.windows[i];
+			lastMarkerShown = school.markers[i];
 			listItems[i].classList.add("active");
 			lastItemClicked.classList.remove("active");
 			lastItemClicked = allButtons[i];
-		}
-	},
-
-	windowSwitch: function(school, i) {
-		school.windows[i].open(school.map, school.markers[i]);
-		if(lastWindowShown != school.windows[i]) {
-			lastWindowShown.close();
-			lastWindowShown = school.windows[i];
 		}
 	},
 
@@ -987,23 +991,24 @@ var partyMap = {
 	  	mapsLink = partyMap.createMapsLink(school, i);
 	    houseInfo = school.houseInfoList[i];
 	    housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
-	    partyMap.createMarker(i,school,housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info, school);  
-	  	school.isMarkShown[i] = true;
+	    partyMap.createMarker(i, school,housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info, school);  
+	  	school.isMarkShown[i] = false;
 	  	school.isInfoWindowShown[i] = false;
 	  }
-	  school.windows[0].open(school.map, school.markers[0]);
-	  allButtons[0].classList.add("active");
+//	  school.windows[0].open(school.map, school.markers[0]);
+//	  allButtons[0].classList.add("active");
 	},
 
 	hideAllMark: function(school) {
 		var i;
+		var allButtons = document.getElementById("houseListUl").getElementsByTagName("li");
 		for(i = 0; i < school.markers.length; i++) {
 			school.windows[i].close();
 			school.markers[i].setMap(null);
 			school.isMarkShown[i] = false;
 			school.isInfoWindowShown[i] = false;
+			allButtons[i].classList.remove("active");
 		}
-		lastItemClicked.classList.remove("active");
 		school.allMarkHidden = true;
 		school.allMarkShown = false;
 	},
