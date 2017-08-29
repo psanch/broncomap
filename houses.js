@@ -172,7 +172,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Sanfilippo',
+				Name: 'Sanfilippo Hall',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
