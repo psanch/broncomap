@@ -1102,6 +1102,7 @@ var partyMap = {
 	hideAllMark: function(school) {
 		var i;
 		var allButtons = document.getElementById("houseListUl").getElementsByTagName("li");
+		var tipWindow = document.getElementById("tipwindow");
 		for(i = 0; i < school.markers.length; i++) {
 			school.windows[i].close();
 			school.markers[i].setMap(null);
@@ -1111,16 +1112,19 @@ var partyMap = {
 		}
 		school.allMarkHidden = true;
 		school.allMarkShown = false;
+		tipWindow.innerHTML = 'Click "show all" to show all markers';
 	},
 
 	showAllMark: function(school) {
 		var i;
+		var tipWindow = document.getElementById("tipwindow");
 		for(i = 0; i < school.markers.length; i++) {
 			school.markers[i].setMap(school.map);
 			school.isMarkShown[i] = true;
 		}
 		school.allMarkShown = true;
 		school.allMarkHidden = false;
+		tipWindow.innerHTML = 'Try satellite view!';
 	},
 
 	listItemsListeners: function(school) {

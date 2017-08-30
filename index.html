@@ -8,10 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet">    
     <!--styles-->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
     
     <title>Bronco Map: Santa Clara House Names and Addresses</title>
-    <meta name="description" content="Looking for the old SCU party map? Bronco Map has all the Santa Clara house names and addresses easily accessible for you, no matter how long you've been pre-gaming. Shoot us an email and you can name your house, too.">
+    <META http-equiv="refresh" content="5; URL=SCU/index.html"> 
   </head>
 
   <!--##################################################-->
@@ -23,39 +23,12 @@
       <img id="rightimg" src="largeLogo.png" class="col-xs-0">
       <div class="title">
           <h1>Bronco Map</h1>
-          <h2>Santa Clara House Names and Addresses</h2>
-          <p style="font-size: 14px;">Tip: click "show all" and then zoom in in satellite view</p>
+          <h2>House Names and Addresses</h2>
+          <p style="font-size: 14px; margin-top: 20%;"><a href="SCU/index.html">Navigating to broncomap.com/SCU/ in 5 seconds...</a></p>
       </div>
     </div>
-    <div class="nav col-lg-12">
-        <ul>
-          <!--Eventually LINKS GO HERE-->
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </div>
 
-        <!--wraps map for formatting-->
-        <div id="map" class="col-sm-8 col-xs-12"></div>
-        <div class="buttonwrap col-sm-4 col-xs-12">
-          <button type="button" id = "hideall" class="btn col-sm-12">HIDE ALL</button>
-          <button type="button" id = "showall" class="btn col-sm-12">SHOW ALL</button>
-        </div>
-        <!--list of house names and descriptions-->
-        <div class="houseListWrap col-sm-4 col-xs-12">
-            <ul id="houseListUl" class="list-group">
-            </ul>
-        </div>
-  <div class="nav col-lg-12">
-        <ul>
-          <!--Eventually LINKS GO HERE-->
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </div>
-  <div class="bottomText col-sm-8 col-xs-12">
+  <div class="bottomText col-xs-12">
       
       <ul>
         <li>Email <a href ="mailto:submithouse@broncomap.com?subject=Add House">submithouse@broncomap.com</a> with your house name, address, and a short description for consideration.</li>
@@ -76,16 +49,4 @@
   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  <!--Google maps API-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw6csekQDGjLcjkgFI9mpDbz0YG0aCFA"></script>
-  <!--house data file houseInformation-->
-  <script type="text/javascript" src="houses.js"></script>
-  <!--loads map div-->
-  <script type="text/javascript">scuMap = partyMap.initMap(partyMap.SCU);</script>
-  <!--loads list of houses-->
-  <script type="text/javascript">partyMap.makeHouseList(partyMap.SCU);</script>
-  <!--loads markers and infowindows-->
-  <script type="text/javascript">partyMap.buildAllMark(partyMap.SCU);</script>
-  <!--clickable html element scripts-->
-  <script type="text/javascript" src="events.js"></script>
 <html>
