@@ -1,6 +1,5 @@
 body {
 	background-color: #F6F6F8; 
-	margin: 10px;
 }
 
 .row .input-group {
@@ -8,11 +7,12 @@ body {
 }
 
 .title {
-	font-family: trajan;
+	font-family: Helvetica Neue;
 	color: black;
 	border-radius: 0px;
 	border-color: black; 
 	text-align: center;
+	align-items: center;
 	margin-top: 0;
 	margin-left: 0;
 	margin-right: 0;
@@ -21,11 +21,26 @@ body {
 .title h1 {
 	font-size: 30px;
 }
+.topbar {
+	height: 10%;
+	margin-bottom: 10px;
+}
+
+#leftimg {
+	height: 100%;
+	float:left;
+	margin: 0 12.5%;
+}
+#rightimg {
+	height: 100%;
+	float: right;
+	margin: 0 12.5%;
+}
 
 .bottomText {
 	font-family: Helvetica Neue;
 	color: black;
-	padding: 1%;
+	padding: 0;
 	border-radius: 0;
 	margin: 0px;
 	text-align: center;
@@ -33,28 +48,24 @@ body {
 .bottomText ul {
 	list-style: none;
 }
-.bottomText a {
-	color: ;
-}
 
 .houseListWrap {
-	height: 71.1%;
+	height: 70%;
 	overflow: scroll;
 	margin: 5px, 0px;
 	padding: 0px;
 }
 
-.mapWrapper {
-	height: 80%;
-}
 
 #map {
-	height:97%;
+	height:80%;
 	width:100%;
+	margin: 0;
+	padding: 0;
 }
 
 .houseListWrap .list-group-item {
-	padding: 9px;
+	padding: 15px;
 	cursor: pointer;
 	font-size: 14px;
 	font-family: Helvetica;
@@ -98,20 +109,19 @@ body {
 
 .nav {
 	display: inline-block;
-	padding: 0px;
+	padding: 0;
 	border-radius: 0;
-
 	outline-color: #F3EAD7;
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	margin: 0;
 }
 
 .nav li {
-	padding: 0 10%;
+	padding: 0 13%;
 	float: left;
 	list-style: none;
 	font-size: 20px;
-	margin-bottom: 10px;
-	text-align: center;
-	overflow-wrap: center;
 }
 
 .nav li:hover {
@@ -119,11 +129,11 @@ body {
 }
 
 .nav li a {
-	font-family: trajan;
+	font-family: Helvetica Neue;
 	color:#690521;
 }
 .buttonwrap {
-	height: 6.5%;
+	height: 10%;
 	margin: 0;
 	padding: 0;
 }
