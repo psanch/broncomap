@@ -512,6 +512,15 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Globe',
+				Address: '1147 Benton Street',
+				Info: ' (SCU Arts)',
+				Type: 'offcampus',
+				Latitude: 37.350287,
+				Longitude: -121.946900,
+			}
+			,
+			{
 				Name: 'G-Spot',
 				Address: '605 Washington Street',
 				Info: ' ',
@@ -541,7 +550,7 @@ var partyMap = {
 			{
 				Name: 'Halfway',
 				Address: '745 Locust Street',
-				Info: '(Rugby)',
+				Info: ' (Rugby)',
 				Type: 'offcampus',
 				Latitude: 37.345446,
 				Longitude: -121.938089,
@@ -623,7 +632,7 @@ var partyMap = {
 			{
 				Name: 'Lafayettes',
 				Address: '431 Lafayette Way',
-				Info: 'Laffs',
+				Info: ' (Laffs)',
 				Type: 'offcampus',
 				Latitude: 37.344871,
 				Longitude: -121.940198,
@@ -641,7 +650,7 @@ var partyMap = {
 			{
 				Name: 'Maples',
 				Address:  '705 Varsi Place',
-				Info: 'Housing Community',
+				Info: ' (Housing Community)',
 				Type: 'offcampus',
 				Latitude: 37.345768,
 				Longitude: -121.938034,
@@ -650,7 +659,7 @@ var partyMap = {
 			{
 				Name: 'Mount Kisco',
 				Address: '961 Bellomy Street',
-				Info: '(Cal Phi)',
+				Info: ' (Cal Phi)',
 				Type: 'greek',
 				Latitude: 37.345441,
 				Longitude: -121.941533,
@@ -722,7 +731,7 @@ var partyMap = {
 			{
 				Name: 'Pi Palace',
 				Address: '986 Bellomy Street',
-				Info: '(Alpha Delta Pi)',
+				Info: ' (Alpha Delta Pi)',
 				Type: 'greek',
 				Latitude: 37.345014,
 				Longitude: -121.941644,
@@ -812,7 +821,7 @@ var partyMap = {
 			{
 				Name: 'Soccer',
 				Address: '551 Washington Street',
-				Info: '(Sigma Pi)',
+				Info: ' (Sigma Pi)',
 				Type: 'greek',
 				Latitude: 37.345633,
 				Longitude: -121.942001,
@@ -857,7 +866,7 @@ var partyMap = {
 			{
 				Name: 'Sunshine',
 				Address: '760 Bellomy Street',
-				Info: '(Rugby)',
+				Info: ' (Rugby)',
 				Type: 'offcampus',
 				Latitude: 37.346131,
 				Longitude: -121.938679,
