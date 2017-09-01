@@ -37,7 +37,7 @@
 
 		school.windows.push(infowindow);
 		school.windows[i].setContent(iwContent);
-		school.windows[i].setMap(null);
+
 		marker.addListener('click', function() {
 			clickList(school, i);
 		});
@@ -140,8 +140,9 @@
 	    houseInfo = school.houseInfoList[i];
 	    housePos = new google.maps.LatLng(houseInfo.Latitude, houseInfo.Longitude);
 	    createMarker(i, school,housePos, houseInfo.Name, '<b>' + houseInfo.Name + '</b>' + '</br>' + houseInfo.Address + '</br>' + houseInfo.Info, school);  
-	  	school.isMarkShown[i] = false;
+	  	school.isMarkShown[i] = true;
 	  	school.isInfoWindowShown[i] = false;
+	  	showAllMark(school);
 	  }
 	}
 
