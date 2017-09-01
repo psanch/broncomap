@@ -1,69 +1,34 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
   <head>
-    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <!--jquery api-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="../css/bootstrap.css" rel="stylesheet">    
+    <link href="css/bootstrap.css" rel="stylesheet">    
     <!--styles-->
     <link rel="stylesheet" href="main.css" type="text/css">
     
     <title>Bronco Map: Santa Clara House Names and Addresses</title>
-    <meta name="description" content="Looking for the old SCU party map? Bronco Map has all the Santa Clara house names and addresses easily accessible for you, no matter how long you've been pre-gaming. Shoot us an email and you can name your house, too.">
+    <META http-equiv="refresh" content="0; URL=SCU/"> 
   </head>
 
   <!--##################################################-->
 
   <body style="height: 100%;">
   <meta name="keywords" content="Santa Clara Bronco Map Party Map house frat sorority mixer dayger">
-  <!-- 
    <div class="topbar"> 
-      <img id="leftimg" src="../largeLogo.png" class="col-xs-0">
-      <img id="rightimg" src="../largeLogo.png" class="col-xs-0">
+      <img id="leftimg" src="largeLogo.png" class="col-xs-0">
+      <img id="rightimg" src="largeLogo.png" class="col-xs-0">
       <div class="title">
           <h1>Bronco Map</h1>
-          <h2>Santa Clara House Names and Addresses</h2>
-          <p style="font-size: 14px;">Tip: click "show all" and then zoom in in satellite view</p>
+          <h2>House Names and Addresses</h2>
+          <p style="font-size: 14px; margin-top: 20%;"><a href="SCU/">THIS PAGE IS A TEST, DON'T PANIC<br/>If you can read this, <b>CLICK HERE</b></a></p>
       </div>
     </div>
-    <div class="nav col-lg-12">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </div>
-    -->
-        <div id="map" class="col-lg-9 col-sm-8"></div>
-        <div class="buttonwrap col-lg-3 col-sm-4">
-          <p id='tipwindow'>Tip: click 'show all' to display all markers</p>
-          <button type="button" id = "hideall" class="btn col-sm-12">
-            <img id="leftimg" src="../largeLogo.png" class="col-xs-0">
-            <img id="rightimg" src="../largeLogo.png" class="col-xs-0">
-          CLEAR MAP
-          </button>
-          <button type="button" id = "showall" class="btn col-sm-12">
-            <img id="leftimg" src="../largeLogo.png" class="col-xs-0">
-            <img id="rightimg" src="../largeLogo.png" class="col-xs-0">
-            FILL MAP
-          </button>
-        </div>
-        <!--list of house names and descriptions-->
-        <div class="houseListWrap col-lg-3 col-sm-4">
-            <ul id="houseListUl" class="list-group">
-            </ul>
-        </div>
-  <!--
-  <div class="nav col-lg-12">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-    </div>
-  <div class="bottomText col-sm-8 col-xs-12">
+
+  <div class="bottomText col-xs-12">
       
       <ul>
         <li>Email <a href ="mailto:submithouse@broncomap.com?subject=Add House">submithouse@broncomap.com</a> with your house name, address, and a short description for consideration.</li>
@@ -73,7 +38,7 @@
             
       <small>We are not affiliated, endorsed by, or in any way officially connected with Santa Clara University.</small>
   </div>
-    -->
+
   </body>
  
   <!--########################################################-->
@@ -83,19 +48,5 @@
   <!--Bootstrap tips-->
   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="../js/bootstrap.min.js"></script>
-  <!--Google maps API-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw6csekQDGjLcjkgFI9mpDbz0YG0aCFA"></script>
-  <!--house data file houseInformation-->
-  <script type="text/javascript" src="../houses.js"></script>
-
-  <script type="text/javascript" src="../functions.js"></script>  
-  <!--loads map div-->
-  <script type="text/javascript">scuMap = initMap(partyMap.SCU);</script>
-  <!--loads list of houses-->
-  <script type="text/javascript">makeHouseList(partyMap.SCU);</script>
-  <!--loads markers and infowindows-->
-  <script type="text/javascript">buildAllMark(partyMap.SCU);</script>
-  <!--clickable html element scripts-->
-  <script type="text/javascript" src="events.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 <html>
