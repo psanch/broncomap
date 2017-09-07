@@ -188,72 +188,72 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Swig Hall (RLC: Cyphi)',
+				Name: 'Swig Hall ',
 				Address: '',
-				Info: ' ',
+				Info: ' (RLC: Cyphi)',
 				Type: 'residencehall',
 				Latitude: 37.347061,
 				Longitude: -121.940259,
 			}
 			,
 			{
-				Name: 'Dunne Hall (RLC: )',
+				Name: 'Dunne Hall ',
 				Address: '',
-				Info: ' ',
+				Info: ' (RLC: Modern Perspectives)',
 				Type: 'residencehall',
 				Latitude: 37.346810,
 				Longitude: -121.941107,
 			}
 			,
 			{
-				Name: 'McLaughlin & Walsh Halls (RLC: )',
+				Name: 'McLaughlin & Walsh Halls ',
 				Address: '',
-				Info: ' ',
+				Info: ' (RLC: Unity)',
 				Type: 'residencehall',
 				Latitude: 37.347472,
 				Longitude: -121.940990,
 			}
 			,
 			{
-				Name: 'Graham Hall (RLC: )',
+				Name: 'Graham Hall ',
 				Address: '',
-				Info: ' ',
+				Info: ' (RLC: Alpha)',
 				Type: 'residencehall',
 				Latitude: 37.347490,
 				Longitude: -121.937724,
 			}
 			,
 			{
-				Name: 'Sanfilippo Hall (RLC: )',
+				Name: 'Sanfilippo Hall ',
 				Address: '',
-				Info: ' ',
+				Info: ' (RLC: Xavier)',
 				Type: 'residencehall',
 				Latitude: 37.347576,
 				Longitude: -121.935985,
 			}
 			,
 			{
-				Name: 'Campisi Hall (RLC: )',
+				Name: 'Campisi Hall ',
 				Address: '',
-				Info: ' ',
+				Info: ' (RLC: Communitas)',
 				Type: 'residencehall',
 				Latitude: 37.347721,
 				Longitude: -121.936664,
 			}
 			,
 			{
-				Name: 'Sobrato Hall (RLC: )',
+				Name: 'Sobrato Hall ',
 				Address: '',
-				Info: ' ',
+				Info: ' (RLC: Loyola)',
 				Type: 'residencehall',
 				Latitude: 37.346759,
 				Longitude: -121.936125,
 			}
 			,
 			{
-				Name: 'Casa Italiana (RLC: )',
+				Name: 'Casa Italiana ',
 				Address: ' ',
-				Info: ' ',
+				Info: ' (RLC: Da Vinci)',
 				Type: 'residencehall',
 				Latitude: 37.346936,
 				Longitude: -121.935088,
@@ -916,7 +916,6 @@ var partyMap = {
 				Latitude: 37.344522,
 				Longitude: -121.938595,
 			}
-			
 		],
 //SCU specific variables//
 
