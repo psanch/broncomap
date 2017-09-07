@@ -152,7 +152,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Delta Gamma',
+				Name: 'DG',
 				Address: '901 Poplar Street',
 				Info: ' ',
 				Type: 'greek',
@@ -550,7 +550,7 @@ var partyMap = {
 			{
 				Name: 'Globe',
 				Address: '1147 Benton Street',
-				Info: ' (SCU Arts)',
+				Info: ' ',
 				Type: 'offcampus',
 				Latitude: 37.350287,
 				Longitude: -121.946900,
