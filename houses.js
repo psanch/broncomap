@@ -44,6 +44,15 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Skyy Box',
+				Address: '977 Bellomy Street',
+				Info: ' (Pi Kappa Alpha)',
+				Type: 'greek',
+				Latitude: 37.345373,
+				Longitude: -121.941716,
+			}
+			,
+			{
 				Name: 'Yellow',
 				Address: '540 Lafayette Street',
 				Info: ' (Sigma Pi)',
@@ -59,6 +68,15 @@ var partyMap = {
 				Type: 'greek',
 				Latitude: 37.345161,
 				Longitude: -121.941278,
+			}
+			,
+			{
+				Name: 'Soccer',
+				Address: '551 Washington Street',
+				Info: ' (Sigma Pi)',
+				Type: 'greek',
+				Latitude: 37.345633,
+				Longitude: -121.942001,
 			}
 			,
 			{
@@ -98,6 +116,15 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Top Gun',
+				Address: '516 Lafayette Street',
+				Info: ' (Sigma Chi)',
+				Type: 'greek',
+				Latitude: 37.345706,
+				Longitude: -121.941128,
+			}
+			,
+			{
 				Name: 'Cal Phi',
 				Address:'561 Washington Street',
 				Info: ' (Cal Phi)',
@@ -107,9 +134,18 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Mount Kisco',
+				Address: '961 Bellomy Street',
+				Info: ' (Cal Phi)',
+				Type: 'greek',
+				Latitude: 37.345441,
+				Longitude: -121.941533,
+			}
+			,
+			{
 				Name: 'Silver',
 				Address: '616 Washington Street',
-				Info: ' (Alpha Phi)',
+				Info: ' ',
 				Type: 'greek',
 				Latitude: 37.346221,
 				Longitude: -121.942905,
@@ -118,7 +154,7 @@ var partyMap = {
 			{
 				Name: 'Delta Gamma',
 				Address: '901 Poplar Street',
-				Info: ' (Delta Gamma)',
+				Info: ' ',
 				Type: 'greek',
 				Latitude: 37.343915,
 				Longitude: -121.940181,
@@ -127,7 +163,7 @@ var partyMap = {
 			{
 				Name: 'Theta Mansion',
 				Address: '981 Fremont Street',
-				Info: ' (Kappa Alpha Theta)',
+				Info: ' ',
 				Type: 'greek',
 				Latitude: 37.352040,
 				Longitude: -121.945486,
@@ -136,7 +172,7 @@ var partyMap = {
 			{
 				Name: 'Kappa Kastle',
 				Address: '930 Bellomy Street',
-				Info: ' (Kappa Kappa Gamma)',
+				Info: ' ',
 				Type: 'greek',
 				Latitude: 37.345244,
 				Longitude: -121.941085,
@@ -145,14 +181,14 @@ var partyMap = {
 			{
 				Name: 'Pi Palace',
 				Address: '471 Washington Street',
-				Info: ' (Alpha Delta Pi)',
+				Info: ' ',
 				Type: 'greek',
 				Latitude: 37.344655,
 				Longitude: -121.941448,
 			}
 			,
 			{
-				Name: 'Swig Hall',
+				Name: 'Swig Hall (RLC: Cyphi)',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
@@ -161,7 +197,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Dunne Hall',
+				Name: 'Dunne Hall (RLC: )',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
@@ -170,7 +206,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'McLaughlin & Walsh Halls',
+				Name: 'McLaughlin & Walsh Halls (RLC: )',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
@@ -179,7 +215,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Graham Hall',
+				Name: 'Graham Hall (RLC: )',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
@@ -188,7 +224,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Sanfilippo Hall',
+				Name: 'Sanfilippo Hall (RLC: )',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
@@ -197,7 +233,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Campisi Hall',
+				Name: 'Campisi Hall (RLC: )',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
@@ -206,7 +242,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Sobrato Hall',
+				Name: 'Sobrato Hall (RLC: )',
 				Address: '',
 				Info: ' ',
 				Type: 'residencehall',
@@ -215,7 +251,7 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Casa Italiana',
+				Name: 'Casa Italiana (RLC: )',
 				Address: ' ',
 				Info: ' ',
 				Type: 'residencehall',
@@ -550,7 +586,7 @@ var partyMap = {
 			{
 				Name: 'Halfway',
 				Address: '745 Locust Street',
-				Info: ' (Rugby)',
+				Info: ' ',
 				Type: 'offcampus',
 				Latitude: 37.345446,
 				Longitude: -121.938089,
@@ -595,7 +631,7 @@ var partyMap = {
 			{
 				Name: 'Ibiza',
 				Address: '1272 Market Street',
-				Info: '',
+				Info: ' ',
 				Type: 'offcampus',
 				Org: '',
 				Latitude: 37.344768,
@@ -623,7 +659,7 @@ var partyMap = {
 			{
 				Name: 'Kappa',
 				Address: '930 Bellomy Street',
-				Info: ' (Kappa Kappa Gamma)',
+				Info: ' ',
 				Type: 'greek',
 				Latitude: 37.345244,
 				Longitude: -121.941085,
@@ -654,15 +690,6 @@ var partyMap = {
 				Type: 'offcampus',
 				Latitude: 37.345768,
 				Longitude: -121.938034,
-			}
-			,
-			{
-				Name: 'Mount Kisco',
-				Address: '961 Bellomy Street',
-				Info: ' (Cal Phi)',
-				Type: 'greek',
-				Latitude: 37.345441,
-				Longitude: -121.941533,
 			}
 			,
 			{
@@ -731,7 +758,7 @@ var partyMap = {
 			{
 				Name: 'Pi Palace',
 				Address: '986 Bellomy Street',
-				Info: ' (Alpha Delta Pi)',
+				Info: ' ',
 				Type: 'greek',
 				Latitude: 37.345014,
 				Longitude: -121.941644,
@@ -783,15 +810,6 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Skyy Box',
-				Address: '977 Bellomy Street',
-				Info: ' ',
-				Type: 'greek',
-				Latitude: 37.345373,
-				Longitude: -121.941716,
-			}
-			,
-			{
 				Name: 'Shack',
 				Address: '986 Market Street',
 				Info: ' ',
@@ -816,15 +834,6 @@ var partyMap = {
 				Type: 'offcampus',
 				Latitude: 37.345599,
 				Longitude: -121.941117,
-			}
-			,
-			{
-				Name: 'Soccer',
-				Address: '551 Washington Street',
-				Info: ' (Sigma Pi)',
-				Type: 'greek',
-				Latitude: 37.345633,
-				Longitude: -121.942001,
 			}
 			,
 			{
@@ -866,7 +875,7 @@ var partyMap = {
 			{
 				Name: 'Sunshine',
 				Address: '760 Bellomy Street',
-				Info: ' (Rugby)',
+				Info: ' ',
 				Type: 'offcampus',
 				Latitude: 37.346131,
 				Longitude: -121.938679,
@@ -879,15 +888,6 @@ var partyMap = {
 				Type: 'offcampus',
 				Latitude: 37.346707,
 				Longitude: -121.939786,
-			}
-			,
-			{
-				Name: 'Top Gun',
-				Address: '516 Lafayette Street',
-				Info: ' ',
-				Type: 'offcampus',
-				Latitude: 37.345706,
-				Longitude: -121.941128,
 			}
 			,
 			{
