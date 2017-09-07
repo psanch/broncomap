@@ -87,7 +87,7 @@ body {
 	margin: 0;
 }
 #showall {
-	height: 41%;
+	height: 50%;
 	padding: 10px;
 	margin: 0;
 	background-color: #ccdde8;
@@ -103,7 +103,7 @@ body {
 	border-radius: 0;
 }
 #hideall {
-	height: 41%;
+	height: 50%;
 	padding: 10px;
 	background-color: #ead1c9;
 	color: black;
