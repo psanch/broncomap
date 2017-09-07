@@ -149,7 +149,6 @@
 	function hideAllMark (school) {
 		var i;
 		var allButtons = document.getElementById("houseListUl").getElementsByTagName("li");
-		var tipWindow = document.getElementById("tipwindow");
 		for(i = 0; i < school.markers.length; i++) {
 			school.windows[i].close();
 			school.markers[i].setMap(null);
@@ -159,19 +158,16 @@
 		}
 		school.allMarkHidden = true;
 		school.allMarkShown = false;
-		tipWindow.innerHTML = 'Click "show all" to show all markers';
 	}
 
 	function showAllMark (school) {
 		var i;
-		var tipWindow = document.getElementById("tipwindow");
 		for(i = 0; i < school.markers.length; i++) {
 			school.markers[i].setMap(school.map);
 			school.isMarkShown[i] = true;
 		}
 		school.allMarkShown = true;
 		school.allMarkHidden = false;
-		tipWindow.innerHTML = 'Try satellite view!';
 	}
 
 	function listItemsListeners (school) {
