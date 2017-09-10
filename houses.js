@@ -116,6 +116,15 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Ice',
+				Address: '660 Lafayette Street',
+				Info: ' (Sigma Chi)',
+				Type: 'greek',
+				Latitude: 37.346943,
+				Longitude: -121.941807,
+			}
+			,
+			{
 				Name: 'Top Gun',
 				Address: '516 Lafayette Street',
 				Info: ' (Sigma Chi)',
@@ -636,15 +645,6 @@ var partyMap = {
 				Org: '',
 				Latitude: 37.344768,
 				Longitude: -121.945538,
-			}
-			,
-			{
-				Name: 'Ice',
-				Address: '660 Lafayette Street',
-				Info: ' ',
-				Type: 'offcampus',
-				Latitude: 37.346943,
-				Longitude: -121.941807,
 			}
 			,
 			{
