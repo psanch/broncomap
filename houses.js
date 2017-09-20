@@ -44,15 +44,6 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Skyy Box',
-				Address: '977 Bellomy Street',
-				Info: ' (Pi Kappa Alpha)',
-				Type: 'greek',
-				Latitude: 37.345373,
-				Longitude: -121.941716,
-			}
-			,
-			{
 				Name: 'Yellow',
 				Address: '540 Lafayette Street',
 				Info: ' (Sigma Pi)',
@@ -95,6 +86,15 @@ var partyMap = {
 				Type: 'greek',
 				Latitude: 37.345884,
 				Longitude: -121.942125,
+			}
+			,
+			{
+				Name: 'Speakeasy',
+				Address: '1243 Bellomy Street',
+				Info: ' (Kappa Sigma)',
+				Type: 'greek',
+				Latitude: 37.344243,
+				Longitude: -121.944958,
 			}
 			,
 			{
@@ -566,15 +566,6 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'G-Spot',
-				Address: '605 Washington Street',
-				Info: ' ',
-				Type: 'offcampus',
-				Latitude: 37.346300,
-				Longitude: -121.942347,
-			}
-			,
-			{
 				Name: 'Green',
 				Address: '536 Alviso Street',
 				Info: ' ',
@@ -654,15 +645,6 @@ var partyMap = {
 				Type: 'offcampus',
 				Latitude: 37.346792,
 				Longitude: -121.939432,
-			}
-			,
-			{
-				Name: 'Kappa',
-				Address: '930 Bellomy Street',
-				Info: ' ',
-				Type: 'greek',
-				Latitude: 37.345244,
-				Longitude: -121.941085,
 			}
 			,
 			{
@@ -837,21 +819,30 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Sky Box',
+				Address: '977 Bellomy Street',
+				Info: ' ',
+				Type: 'offcampus',
+				Latitude: 37.345373,
+				Longitude: -121.941716,
+			}
+			,
+			{
+				Name: 'Slaughter House',
+				Address: '605 Washington Street',
+				Info: ' ',
+				Type: 'offcampus',
+				Latitude: 37.346300,
+				Longitude: -121.942347,
+			}
+			,
+			{
 				Name: 'Spacejam',
 				Address: '830 Alviso Street',
 				Info: ' ',
 				Type: 'offcampus',
 				Latitude: 37.344839,
 				Longitude: -121.939319,
-			}
-			,
-			{
-				Name: 'Speakeasy',
-				Address: '1243 Bellomy Street',
-				Info: ' ',
-				Type: 'offcampus',
-				Latitude: 37.344243,
-				Longitude: -121.944958,
 			}
 			,
 			{
