@@ -6,6 +6,16 @@ var partyMap = {
 
 		houseInfoList: [
 			{
+				Name: 'Sandlot',
+				Address: '529 Lafayette Street',
+				Info: ' (Zeta Beta Tau)',
+				Org: 'ZBT',
+				Type: 'greek',
+				Latitude: 37.345908,
+				Longitude: -121.940740,
+			}
+			,
+			{
 				Name: 'Black Market',
 				Address: '1206 Market Street',
 				Info: ' (Zeta Beta Tau)',
@@ -16,13 +26,13 @@ var partyMap = {
 			}
 			,
 			{
-				Name: 'Courtside',
-				Address: '860 Washington Street',
+				Name: 'Shack',
+				Address: '986 Market Street',
 				Info: ' (Zeta Beta Tau)',
 				Org: 'ZBT',
 				Type: 'greek',
-				Latitude: 37.348326,
-				Longitude: -121.944055,
+				Latitude: 37.346105,
+				Longitude: -121.941872,
 			}
 			,
 			{
@@ -95,15 +105,6 @@ var partyMap = {
 				Type: 'greek',
 				Latitude: 37.344243,
 				Longitude: -121.944958,
-			}
-			,
-			{
-				Name: 'OTR',
-				Address: '531 Washington Street',
-				Info: ' (Tau Kappa Epsilon)',
-				Type: 'greek',
-				Latitude: 37.345496,
-				Longitude: -121.941857,
 			}
 			,
 			{
@@ -476,6 +477,15 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'Courtside',
+				Address: '860 Washington Street',
+				Info: ' ',
+				Type: 'offcampus',
+				Latitude: 37.348326,
+				Longitude: -121.944055,
+			}
+			,
+			{
 				Name: 'Cozy',
 				Address: '655 Washington Street',
 				Info: ' ',
@@ -711,6 +721,15 @@ var partyMap = {
 			}
 			,
 			{
+				Name: 'OTR',
+				Address: '531 Washington Street',
+				Info: ' ',
+				Type: 'offcampus',
+				Latitude: 37.345496,
+				Longitude: -121.941857,
+			}
+			,
+			{
 				Name: 'Paradise',
 				Address: '471 Washington Street',
 				Info: ' ',
@@ -780,24 +799,6 @@ var partyMap = {
 				Type: 'offcampus',
 				Latitude: 37.344901,
 				Longitude: -121.939191,
-			}
-			,
-			{
-				Name: 'Sandlot',
-				Address: '529 Lafayette Street',
-				Info: ' ',
-				Type: 'offcampus',
-				Latitude: 37.345908,
-				Longitude: -121.940740,
-			}
-			,
-			{
-				Name: 'Shack',
-				Address: '986 Market Street',
-				Info: ' ',
-				Type: 'offcampus',
-				Latitude: 37.346105,
-				Longitude: -121.941872,
 			}
 			,
 			{
@@ -908,6 +909,7 @@ var partyMap = {
 				Longitude: -121.938595,
 			}
 		],
+
 //SCU specific variables//
 
 		center: {lat: 37.346313, lng: -121.941424},
